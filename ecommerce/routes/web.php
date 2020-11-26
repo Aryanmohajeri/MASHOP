@@ -138,4 +138,7 @@ Route::get('language/english','BlogController@englishLanguage')->name('language.
 Route::get('language/spanish','BlogController@spanishLanguage')->name('language.spanish');
 Route::get('blog/single/{id}','BlogController@blogSingle');
 
+// Product details Page
+Route::get('products/{id}', 'ProductController@productsView');
+Route::get('all_category/{id}', 'ProductController@categoryView');
 

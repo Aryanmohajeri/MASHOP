@@ -1,5 +1,8 @@
 @extends('layouts.app')
+
 @section('content')
+    @include('layouts.menubar')
+
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/styles/product_styles.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/styles/product_responsive.css')}}">
     <!-- Single Product -->

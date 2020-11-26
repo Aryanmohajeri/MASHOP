@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    @include('layouts.menubar')
+
 
     @foreach($posts as $row)
         <div class="single_post">

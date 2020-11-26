@@ -47,8 +47,9 @@
                                 <span class="badge badge-success">Active</span>
                                 @else
                                 <span class="badge badge-danger">Inactive</span>
-                                @endif
 
+                                @endif
+                                </td>
                                 <td>
                                     <a href="{{ URL::to('edit/product/'.$row->id) }} " class="btn btn-sm btn-info"><i class="fa fa-edit" title="Edit"></i></a>
                                     <a href="{{ URL::to('delete/product/'.$row->id) }}" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>

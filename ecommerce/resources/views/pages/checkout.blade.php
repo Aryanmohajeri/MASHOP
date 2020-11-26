@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    @include('layouts.menubar')
+
 
     @php
         $setting = DB::table('settings')->first();
