@@ -36,7 +36,7 @@
                         @foreach($product as $row)
                             <tr>
                                 <td>{{ $row->product_code }}</td>
-                                <td>{{ $row->product_name }}</td>
+                                <td>{{str_limit($row->product_name, $limit = 15, $end = "...") }}</td>
                                 <td> <img src="{{ URL::to($row->image_one) }}" height="50px;" width="50px;"> </td>
 
                                 <td>{{ $row->category_name }}</td>

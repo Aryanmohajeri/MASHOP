@@ -20,60 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8037945-b51a-4d8b-9f31-c959f86f4e1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_00_27.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_01_41.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_04_32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_05_34.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_08_33.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_12_32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_13_27.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_18_33.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_19_28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_33_33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_33_34.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_38_31.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_44_33.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_47_31.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_52_33.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/brand/261120_15_56_31.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684438300773058.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684438300797384.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684438436814013.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684438436830774.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684438436928034.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684443104699112.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684443104766387.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684443104788379.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684443721837305.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684443721947153.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684443721971686.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/slider.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/all_category.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/all_products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecommerce.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/brand/011120_14_53_28.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/brand/281020_21_35_26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/brand/291020_11_56_41.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/brand/301020_13_31_29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/product/1683805432341591.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/product/1683805432375004.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/product/1683805432448814.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/product/1683805612781290.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/product/1683805612892078.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/product/1683805612991029.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/menubar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/menubar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/moz.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/blog.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/blog_single.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/blog_single.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/product_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/wishlist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/wishlist.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +195,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606069825320</updated>
       <workItem from="1606069828439" duration="480000" />
-      <workItem from="1606401010341" duration="4904000" />
+      <workItem from="1606401010341" duration="5258000" />
     </task>
     <servers />
   </component>
