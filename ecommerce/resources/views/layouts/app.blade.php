@@ -68,18 +68,21 @@
                                 @else
                                     <ul class="standard_dropdown top_bar_dropdown">
                                         <li>
-                                            <a href="{{route('home')}}">                                            <div class="user_icon"><img src="{{asset('public/frontend/images/user.svg')}}" alt=""></div>
+                                            <a href="{{route('home')}}">
+                                                <div class="user_icon"><img src="{{asset('public/frontend/images/user.svg')}}" alt=""></div>
                                                 Profile<i class="fas fa-chevron-down"></i></a>
                                             <ul>
                                                 <li><a href="{{route('user.wishlist')}}">Wishlist</a></li>
                                                 <li><a href="{{route('user.checkout')}}">Checkout</a></li>
-                                                <li><a href="#">Others</a></li>
+                                                <li>
+                                                    <a href="" data-toggle="modal" data-target="#exampleModal">My Order Tracking</a>
+                                                </li>
+                                                <li><a  href="{{route('user.logout')}}" style="color: red">Log Out</a></li>
 
                                             </ul>
                                         </li>
                                     </ul>
                                 @endguest
-
                             </div>
                         </div>
                     </div>
@@ -276,6 +279,37 @@
         </div>
     </div>
 </div>
+
+
+<!--Order Trackinng Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Your Order Number</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="{{ route('order.tracking') }}">
+                    @csrf
+                    <div class="modal-body">
+                        <label>Order Number</label>
+                        <input type="text" name="code" required="" class="form-control" placeholder="Your Order Number">
+                    </div>
+
+                    <button class="btn btn-danger" type="submit">Track Now </button>
+
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
 
 <script src="{{asset('public/frontend/js/jquery-3.3.1.min.js')}}"></script>
 <script src="{{asset('public/frontend/styles/bootstrap4/popper.js')}}"></script>

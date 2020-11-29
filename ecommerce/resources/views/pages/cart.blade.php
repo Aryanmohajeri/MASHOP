@@ -76,9 +76,9 @@
                         <!-- Order Total -->
                         <div class="order_total">
                             <div class="order_total_content text-md-right">
-                                <div>+20% VAT</div>
+
                                 <div class="order_total_title">Order Total:</div>
-                                <div class="order_total_amount">£{{Cart::total()}}</div>
+                                <div class="order_total_amount">£{{Cart::subtotal()}}</div>
                             </div>
                         </div>
 

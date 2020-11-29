@@ -158,7 +158,7 @@ class CartController extends Controller
         }
     }
 
-    public function ProductWishlist(){
+    public function productWishlist(){
         $userid = Auth::id();
         $product = DB::table('wishlists')
             ->join('products','wishlists.product_id','products.id')
@@ -205,4 +205,12 @@ class CartController extends Controller
         return Redirect()->back()->with($notification);
 
     }
+
+    public function paymentPage(){
+
+        $cart = Cart::Content();
+        return view('pages.payment',compact('cart'));
+
+    }
+
 }

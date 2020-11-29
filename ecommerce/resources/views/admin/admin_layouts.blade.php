@@ -71,6 +71,7 @@
                 </div><!-- menu-item -->
             </a><!-- sl-menu-link -->
 
+            {{--Categories, Subcategories, Brands--}}
             <a href="#" class="sl-menu-link">
                 <div class="sl-menu-item">
                     <i class="menu-item-icon ion-ios-folder tx-24"></i>
@@ -83,6 +84,8 @@
                 <li class="nav-item"><a href="{{route('sub.categories')}}" class="nav-link">Sub Category</a></li>
                 <li class="nav-item"><a href="{{route('brands')}}" class="nav-link">Brand</a></li>
             </ul>
+            {{--Coupons--}}
+
             <a href="#" class="sl-menu-link">
                 <div class="sl-menu-item">
                     <i class="menu-item-icon icon ion-pricetags tx-24"></i>
@@ -93,7 +96,7 @@
             <ul class="sl-menu-sub nav flex-column">
                 <li class="nav-item"><a href="{{route('admin.coupon')}}" class="nav-link">Coupon</a></li>
             </ul>
-
+{{--Products--}}
             <a href="#" class="sl-menu-link">
                 <div class="sl-menu-item">
 
@@ -105,6 +108,25 @@
             <ul class="sl-menu-sub nav flex-column">
                 <li class="nav-item"><a href="{{route('add.product')}}" class="nav-link">Add Product</a></li>
                 <li class="nav-item"><a href="{{route('all.product')}}" class="nav-link">All Product</a></li>
+            </ul>
+
+
+
+            {{--Orders--}}
+            <a href="#" class="sl-menu-link">
+                <div class="sl-menu-item">
+
+                    <i class="menu-item-icon icon ion-ios-cart tx-24"></i>
+                    <span class="menu-item-label">Orders</span>
+                    <i class="menu-item-arrow fa fa-angle-down"></i>
+                </div><!-- menu-item -->
+            </a><!-- sl-menu-link -->
+            <ul class="sl-menu-sub nav flex-column">
+                <li class="nav-item"><a href="{{route('admin.neworder')}}" class="nav-link">New Orders</a></li>
+                <li class="nav-item"><a href="{{ route('admin.accept.payment') }}" class="nav-link">Accept Payment </a></li>
+                <li class="nav-item"><a href="{{ route('admin.cancel.order') }}" class="nav-link">Cancel Order </a></li>
+                <li class="nav-item"><a href="{{ route('admin.process.payment') }}" class="nav-link">Process Delivery </a></li>
+                <li class="nav-item"><a href="{{ route('admin.success.payment') }}" class="nav-link">Delivery Success </a></li>
             </ul>
 
 {{--Blog--}}
@@ -131,6 +153,7 @@
             </a><!-- sl-menu-link -->
             <ul class="sl-menu-sub nav flex-column">
                 <li class="nav-item"><a href="{{route('admin.newsletter')}}" class="nav-link">Newsletters</a></li>
+                <li class="nav-item"><a href="{{ route('admin.seo') }}" class="nav-link">SEO Setting </a></li>
             </ul>
         </div><!-- sl-sideleft-menu -->
         <br>

@@ -103,6 +103,29 @@ Route::get('edit/post/{id}', 'Admin\PostController@editPost');
 Route::post('update/post/{id}', 'Admin\PostController@updatePost');
 
 
+// Admin Order Route
+
+Route::get('admin/pading/order', 'Admin\OrderController@newOrder')->name('admin.neworder');
+Route::get('admin/view/order/{id}', 'Admin\OrderController@viewOrder');
+
+Route::get('admin/payment/accept/{id}', 'Admin\OrderController@paymentAccept');
+Route::get('admin/payment/cancel/{id}', 'Admin\OrderController@paymentCancel');
+
+Route::get('admin/accept/payment', 'Admin\OrderController@Acceptpayment')->name('admin.accept.payment');
+
+Route::get('admin/cancel/order', 'Admin\OrderController@Cancelorder')->name('admin.cancel.order');
+
+Route::get('admin/process/payment', 'Admin\OrderController@processPayment')->name('admin.process.payment');
+Route::get('admin/success/payment', 'Admin\OrderController@successPayment')->name('admin.success.payment');
+
+Route::get('admin/delivery/process/{id}', 'Admin\OrderController@deliveryProcess');
+Route::get('admin/delivery/done/{id}', 'Admin\OrderController@deliveryDone');
+
+// SEO Setting Route
+Route::get('admin/seo', 'Admin\OrderController@seo')->name('admin.seo');
+Route::post('admin/seo/update', 'Admin\OrderController@updateSeo')->name('update.seo');
+
+
 //Frontend Routes
 Route::post('store/newsletter', 'FrontController@storenewsletter')->name('store.newsletter');
 
@@ -138,7 +161,14 @@ Route::get('language/english','BlogController@englishLanguage')->name('language.
 Route::get('language/spanish','BlogController@spanishLanguage')->name('language.spanish');
 Route::get('blog/single/{id}','BlogController@blogSingle');
 
+// Payment Step
+Route::get('payment/page', 'CartController@paymentPage')->name('payment.step');
+Route::post('user/payment/process/', 'PaymentController@paymentProcess')->name('payment.process');
+
 // Product details Page
 Route::get('products/{id}', 'ProductController@productsView');
 Route::get('all_category/{id}', 'ProductController@categoryView');
+Route::post('user/stripe/charge/', 'PaymentController@stripeCharge')->name('stripe.charge');
 
+// Order Tracking Route
+Route::post('order/tracking', 'FrontController@orderTraking')->name('order.tracking');

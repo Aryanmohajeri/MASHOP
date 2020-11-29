@@ -126,9 +126,9 @@
                             <li class="list-group-item">Shipping Charge : <span style="float: right;">£{{ $charge  }} </span> </li>
                             <li class="list-group-item">20% Vat : <span style="float: right;">£{{ Cart::Subtotal() * $vat }} </span> </li>
                             @if(Session::has('coupon'))
-                         <li class="list-group-item">Total : <span style="float: right;">£{{ Session::get('coupon')['balance'] + $charge + $vat }} </span> </li>
+                         <li class="list-group-item">Total : <span style="float: right;">£{{ Session::get('coupon')['balance'] + $charge  }} </span> </li>
                             @else
-                                <li class="list-group-item">Total : <span style="float: right;">£{{ Cart::Subtotal() + $charge + $vat }} </span> </li>
+                                <li class="list-group-item">Total : <span style="float: right;">£{{ Cart::Subtotal() + $charge  }} </span> </li>
                             @endif
 
 
@@ -146,7 +146,7 @@
 
             <div class="cart_buttons">
                 <button type="button" class="button cart_button_clear">All Cancel</button>
-{{--                <a href="{{ route('payment.step') }}"  class="button cart_button_checkout">Final Step</a>--}}
+        <a href="{{ route('payment.step') }}"  class="button cart_button_checkout">Continue Payment</a>
             </div>
         </div>
     </div>
