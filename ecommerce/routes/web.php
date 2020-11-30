@@ -172,3 +172,55 @@ Route::post('user/stripe/charge/', 'PaymentController@stripeCharge')->name('stri
 
 // Order Tracking Route
 Route::post('order/tracking', 'FrontController@orderTraking')->name('order.tracking');
+
+// Order Report Routes
+
+Route::get('admin/today/order', 'Admin\ReportController@todayOrder')->name('today.order');
+Route::get('admin/today/delivery', 'Admin\ReportController@todayDelivery')->name('today.delivery');
+
+Route::get('admin/this/month', 'Admin\ReportController@thisMonth')->name('this.month');
+Route::get('admin/search/report', 'Admin\ReportController@search')->name('search.report');
+
+Route::post('admin/search/by/year', 'Admin\ReportController@searchByYear')->name('search.by.year');
+Route::post('admin/search/by/month', 'Admin\ReportController@searchByMonth')->name('search.by.month');
+
+Route::post('admin/search/by/date', 'Admin\ReportController@searchByDate')->name('search.by.date');
+
+// Admin Role Routes
+
+Route::get('admin/all/user', 'Admin\UserRoleController@userRole')->name('admin.all.user');
+
+Route::get('admin/create/admin', 'Admin\UserRoleController@userCreate')->name('create.admin');
+
+Route::post('admin/store/admin', 'Admin\UserRoleController@userStore')->name('store.admin');
+
+Route::get('delete/admin/{id}', 'Admin\UserRoleController@userDelete');
+Route::get('edit/admin/{id}', 'Admin\UserRoleController@userEdit');
+
+Route::post('admin/update/admin', 'Admin\UserRoleController@userUpdate')->name('update.admin');
+
+// Admin Site Setting Route
+Route::get('admin/site/setting', 'Admin\SettingController@siteSetting')->name('admin.site.setting');
+
+Route::post('admin/sitesetting', 'Admin\SettingController@updateSiteSetting')->name('update.sitesetting');
+
+// Return Order Route
+
+Route::get('success/list/', 'PaymentController@successList')->name('success.orderlist');
+
+Route::get('request/return/{id}', 'PaymentController@requestReturn');
+
+Route::get('admin/return/request/', 'Admin\ReturnController@returnRequest')->name('admin.return.request');
+
+Route::get('admin/approve/return/{id}', 'Admin\ReturnController@approveReturn');
+Route::get('admin/all/return/', 'Admin\ReturnController@allReturn')->name('admin.all.return');
+
+// Order Stock Route
+Route::get('admin/product/stock', 'Admin\UserRoleController@productStock')->name('admin.product.stock');
+
+/// Contact page Routes
+
+Route::get('contact/page', 'ContactController@Contact')->name('contact.page');
+Route::post('contact/form', 'ContactController@contactForm')->name('contact.form');
+
+Route::get('admin/all/message', 'ContactController@allMessage')->name('all.message');
