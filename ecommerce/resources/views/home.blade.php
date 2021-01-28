@@ -39,7 +39,7 @@
                                     @elseif($row->status == 3)
                                         <span class="badge badge-success">Delivered</span>
                                     @else
-                                        <span class="badge badge-danger">Cancel Order</span>
+                                        <span class="badge badge-danger">Cancelled Order</span>
 
                                     @endif
 

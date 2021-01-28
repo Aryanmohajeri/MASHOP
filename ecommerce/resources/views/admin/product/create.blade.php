@@ -112,7 +112,7 @@
 
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <label class="form-control-label">Video Link: <span class="tx-danger">*</span></label>
+                                <label class="form-control-label">Video Link: </label>
                                 <input class="form-control" name="video_link" placeholder="Video Link" >
                             </div>
                         </div><!-- col-4 -->
@@ -130,9 +130,9 @@
 
                         <div class="col-lg-4">
                             <div class="form-group">
-                                <label class="form-control-label">Image Two: <span class="tx-danger">*</span></label>
+                                <label class="form-control-label">Image Two: <span class="tx-danger"></span></label>
                                 <label class="custom-file">
-                                    <input type="file" id="file" class="custom-file-input" name="image_two" onchange="readURL2(this);" required="">
+                                    <input type="file" id="file" class="custom-file-input" name="image_two" onchange="readURL2(this);" >
                                     <span class="custom-file-control"></span>
                                     <img src="#" id="two">
                                 </label>
@@ -143,7 +143,7 @@
                             <div class="form-group">
                                 <label class="form-control-label">Image Three: <span class="tx-danger">*</span></label>
                                 <label class="custom-file">
-                                    <input type="file" id="file" class="custom-file-input" name="image_three" onchange="readURL3(this);" required="">
+                                    <input type="file" id="file" class="custom-file-input" name="image_three" onchange="readURL3(this);" >
                                     <span class="custom-file-control"></span>
                                     <img src="#" id="three">
                                 </label>

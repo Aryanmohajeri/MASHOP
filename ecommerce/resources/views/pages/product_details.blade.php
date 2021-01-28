@@ -30,7 +30,7 @@
                     <div class="product_description">
                         <div class="product_category">{{$product->category_name}} > {{$product->subcategory_name}}</div>
                         <div class="product_name">{{$product->product_name}}</div>
-                        <div class="rating_r rating_r_4 product_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                        <div class="rating_r rating_r_4 product_rating"></div>
                         <div class="product_text"><p>
                                 {!! str_limit($product->product_details, $limit = 600)  !!}
                                 {{--code above allows less characters to show on product_details block--}}
@@ -92,7 +92,12 @@
                                     <div class="product_fav"><i class="fas fa-heart"></i></div>
                                 </div>
 
-                            </form>
+                        <br><br>
+                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                        <div class="addthis_inline_share_toolbox_cec8"></div>
+
+
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -128,13 +133,28 @@
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><br>{!! $product->product_details!!}</div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><br>{!! $product->video_link!!}</div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><br>Product Review</div>
+                        <div
+
+                            class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><br>
+
+                            <iframe width="420" height="250"
+                                    src="{{$product->video_link}}">
+
+                            </iframe>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><br>
+
+                            <div class="fb-comments" data-href="{{ Request::url() }}" data-width="" data-numposts="5"></div>
+
+                        </div>
                     </div>
 
                 </div>
             </div>
         </div>
     </div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="pLPUrGnG"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6011c3ac3531b360"></script>
 
     @endsection

@@ -168,6 +168,7 @@ Route::post('user/payment/process/', 'PaymentController@paymentProcess')->name('
 // Product details Page
 Route::get('products/{id}', 'ProductController@productsView');
 Route::get('all_category/{id}', 'ProductController@categoryView');
+Route::get('subcategories/{id}', 'ProductController@productsView');
 Route::post('user/stripe/charge/', 'PaymentController@stripeCharge')->name('stripe.charge');
 
 // Order Tracking Route

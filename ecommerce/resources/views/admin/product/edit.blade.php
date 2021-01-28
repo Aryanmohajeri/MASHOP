@@ -250,9 +250,9 @@
                     <div class="row">
                         <div class="col-lg-6 col-sm-6">
 
-                            <label class="form-control-label">Image One (Main Thumbnali): <span class="tx-danger">*</span></label><br>
+                            <label class="form-control-label">Image One (Main Thumbnail): <span class="tx-danger">*</span></label><br>
                             <label class="custom-file">
-                                <input type="file" id="file" class="custom-file-input" name="image_one" onchange="readURL(this);" required="" >
+                                <input type="file" id="file" class="custom-file-input" name="image_one" onchange="readURL(this);"  >
                                 <span class="custom-file-control"></span>
                                 <input type="hidden" name="old_one" value="{{ $product->image_one }}">
                                 <img src="#" id="one">

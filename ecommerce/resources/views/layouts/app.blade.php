@@ -25,6 +25,7 @@
 
 <body>
 
+
 <div class="super_container">
 
     <!-- Header -->
@@ -37,8 +38,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col d-flex flex-row">
-                        <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{asset('public/frontend/images/phone.png')}}" alt=""></div>+38 068 005 3570</div>
-                        <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{asset('public/frontend/images/mail.png')}}" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+                        <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{asset('public/frontend/images/phone.png')}}" alt=""></div>+44 078 082 84049</div>
+                        <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{asset('public/frontend/images/mail.png')}}" alt=""></div><a href="mailto:fastsales@gmail.com">mashoptech@gmail.com</a></div>
                         <div class="top_bar_content ml-auto">
                             <div class="top_bar_menu">
                                 <ul class="standard_dropdown top_bar_dropdown">
@@ -74,9 +75,7 @@
                                             <ul>
                                                 <li><a href="{{route('user.wishlist')}}">Wishlist</a></li>
                                                 <li><a href="{{route('user.checkout')}}">Checkout</a></li>
-                                                <li>
-                                                    <a href="" data-toggle="modal" data-target="#exampleModal">My Order Tracking</a>
-                                                </li>
+                                                <li><a href="" data-toggle="modal" data-target="#exampleModal">My Order Tracking</a></li>
                                                 <li><a  href="{{route('user.logout')}}" style="color: red">Log Out</a></li>
 
                                             </ul>
@@ -185,21 +184,17 @@
                     <div class="col-lg-3 footer_col">
                         <div class="footer_column footer_contact">
                             <div class="logo_container">
-                                <div class="logo"><a href="#">OneTech</a></div>
+                                <div class="logo"><a href="#">MASHOPTECH</a></div>
                             </div>
                             <div class="footer_title">Got Question? Call Us 24/7</div>
-                            <div class="footer_phone">+38 068 005 3570</div>
+                            <div class="footer_phone">+44 078 082 84049</div>
                             <div class="footer_contact_text">
-                                <p>17 Princess Road, London</p>
-                                <p>Grester London NW18JR, UK</p>
+                                <p>1 Aston Street, Birmingham, B4 7ET</p>
                             </div>
                             <div class="footer_social">
                                 <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.facebook.com/Mashoptech-105643738209044"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -222,29 +217,19 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-2">
-                        <div class="footer_column">
-                            <ul class="footer_list footer_list_2">
-                                <li><a href="#">Video Games & Consoles</a></li>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Cameras & Photos</a></li>
-                                <li><a href="#">Hardware</a></li>
-                                <li><a href="#">Computers & Laptops</a></li>
-                            </ul>
-                        </div>
-                    </div>
+
 
                     <div class="col-lg-2">
                         <div class="footer_column">
                             <div class="footer_title">Customer Care</div>
                             <ul class="footer_list">
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">Order Tracking</a></li>
-                                <li><a href="#">Wish List</a></li>
-                                <li><a href="#">Customer Services</a></li>
+                                <li><a href="{{route('home')}}">My Account</li>
+                                <li><a href="" data-toggle="modal" data-target="#exampleModal">My Order Tracking</a></li>
+                                <li><a href="{{route('user.wishlist')}}">Wish list</a></li>
+                                <li><a href="{{ route('contact.page') }}">Customer Service</a></li>
                                 <li><a href="#">Returns / Exchange</a></li>
                                 <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Product Support</a></li>
+                                <li><a href="{{ route('blog.post') }}">Blogs</a></li>
                             </ul>
                         </div>
                     </div>
@@ -253,32 +238,6 @@
             </div>
         </footer>
 
-        <!-- Copyright -->
-
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-
-                    <div class="copyright_container d-flex flex-sm-row flex-column align-items-center justify-content-start">
-                        <div class="copyright_content"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </div>
-                        <div class="logos ml-sm-auto">
-                            <ul class="logos_list">
-                                <li><a href="#"><img src="{{asset('public/frontend/images/logos_1.png')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('public/frontend/images/logos_2.png')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('public/frontend/images/logos_3.png')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('public/frontend/images/logos_4.png')}}" alt=""></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <!--Order Trackinng Modal -->
@@ -302,8 +261,6 @@
                     <button class="btn btn-danger" type="submit">Track Now </button>
 
                 </form>
-
-
             </div>
 
         </div>

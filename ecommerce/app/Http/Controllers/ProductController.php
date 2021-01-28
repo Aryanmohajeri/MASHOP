@@ -69,7 +69,7 @@ class ProductController extends Controller
 
         $products = DB::table('products')->where('subcategory_id',$id)->paginate(10);
 
-        $categoies = DB::table('categories')->get();
+        $categories = DB::table('categories')->get();
 
         $brands = DB::table('products')->where('subcategory_id',$id)->select('brand_id')->groupBy('brand_id')->get();
 
@@ -80,6 +80,13 @@ class ProductController extends Controller
 
 
     public function categoryView($id){
+
+        $category_all =  DB::table('products')->where('category_id',$id)->paginate(10);
+        return view('pages.all_category',compact('category_all'));
+
+    }
+
+    public function subcategoryView($id){
 
         $category_all =  DB::table('products')->where('category_id',$id)->paginate(10);
         return view('pages.all_category',compact('category_all'));

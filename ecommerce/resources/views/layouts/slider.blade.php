@@ -24,7 +24,7 @@
                     @endif
 
 
-                           
+
 
                         </div>
                         <div class="banner_product_name">{{ $slider->brand_name }}</div>

@@ -20,19 +20,178 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8037945-b51a-4d8b-9f31-c959f86f4e1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/media/brand/281120_20_47_35.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684637663384378.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684637663444085.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684637663468233.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684637913725578.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684637913788854.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/product/1684637913816274.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/brand/270121_21_02_54.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/brand/270121_21_12_54.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/brand/270121_23_20_49.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/brand/270121_23_22_50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/brand/270121_23_37_49.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690078808619894.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082441930812.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082442159789.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082442291523.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082622227227.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082622417966.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082622653466.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082730539215.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082730671053.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082730725489.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082869959614.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082870094940.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082870137870.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082961428964.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082961677501.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690082961802868.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083071705933.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083071840858.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083071959725.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083321497472.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083321564760.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083321612063.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083330177544.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083330233018.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083330281721.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083408141229.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083408250809.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083408295500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083707586288.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690083707632353.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084138268459.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084138320180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084138365524.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084255957538.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084256009839.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084256055840.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084328256121.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084328309461.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084328357358.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084378583680.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084378634734.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084378681092.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084433730356.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084433785088.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084433831468.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084471858892.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084471912960.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084471961983.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084539168233.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084539221096.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084539266546.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084586071647.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084586125320.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084586170435.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084628400190.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084628454241.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084628498861.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084972781100.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084972838383.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690084972882169.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085052727503.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085052783396.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085052838535.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085186064074.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085186118689.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085186161362.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085330856436.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085330930178.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085331005685.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085467462968.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085467720552.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085467864093.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085549155701.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085549420539.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690085549577183.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086010920732.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086011064364.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086011126133.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086222141143.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086222252556.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086222481943.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086306126105.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086306176050.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086306221116.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086363810434.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086363862041.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086363907516.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086497131969.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086497446626.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/1690086497591897.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/270121_22_17_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/270121_22_59_00.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/product/270121_23_36_21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/welcome.blade111.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecommerce.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_25_192844_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_25_192844_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/cart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/char_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/char_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/char_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/char_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/contact_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/contact_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/deals.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/kaziariyan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/logos_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/mail_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/mastercard (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/mastercard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/new_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/new_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/new_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/new_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/new_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/new_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/new_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/new_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/new_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/new_single.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/phone_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/popular_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/popular_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/popular_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/popular_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/popular_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/review_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/review_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/review_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/send.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/shop_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/shop_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/shopping_cart.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/single_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/single_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/single_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/single_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/trends_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/images/trends_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/brand/191120_16_00_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/brand/191120_16_17_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/brand/191120_16_49_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/brand/261120_15_00_27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/brand/261120_15_19_28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/brand/261120_15_56_31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/menubar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/menubar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/product_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +211,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -168,6 +335,7 @@
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kenFne0OYrq5SyRiW5Az7l3AnZ" />
@@ -180,9 +348,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ecommerce2.0" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -190,7 +360,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\MASHOP\ecommerce\resources\views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -208,6 +384,11 @@
       <updated>1606069825320</updated>
       <workItem from="1606069828439" duration="480000" />
       <workItem from="1606401010341" duration="6899000" />
+      <workItem from="1611771292172" duration="380000" />
+      <workItem from="1611772093787" duration="749000" />
+      <workItem from="1611773243682" duration="129000" />
+      <workItem from="1611773468808" duration="3093000" />
+      <workItem from="1611778065603" duration="14898000" />
     </task>
     <servers />
   </component>
@@ -228,5 +409,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/pages/index.blade.php</url>
+          <line>319</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/pages/index.blade.php</url>
+          <line>116</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1096c4ec-ab10-44c7-afe6-f869821cf090" name="Default Changelist" comment="" />
+    <list default="true" id="1096c4ec-ab10-44c7-afe6-f869821cf090" name="Default Changelist" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/resources/views/layouts/menubar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/resources/views/layouts/menubar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/resources/views/welcome.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,8 +143,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ecommerce/resources/views/admin" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ecommerce" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -148,20 +154,33 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\MASHOP\ecommerce\resources\views\admin" />
       <recent name="C:\xampp\htdocs\MASHOP\ecommerce\resources\views" />
+      <recent name="C:\xampp\htdocs\MASHOP\ecommerce\resources\views\admin" />
       <recent name="C:\Users\aryan\Downloads\Excise_File\Total Project Source Code BackUp\ecommerce\resources\views\admin" />
       <recent name="C:\xampp\htdocs\MASHOP\ecommerce\resources\views\pages" />
       <recent name="C:\xampp\htdocs\MASHOP\ecommerce\resources\views\admin\coupon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\MASHOP\ecommerce\resources\views" />
       <recent name="C:\xampp\htdocs\MASHOP\ecommerce\resources\views\admin" />
       <recent name="C:\xampp\htdocs\MASHOP\ecommerce\resources\views\pages" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MASHOP" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.MASHOP" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -176,36 +195,35 @@
       <workItem from="1606649855133" duration="1046000" />
       <workItem from="1606658887889" duration="17422000" />
       <workItem from="1606737594966" duration="8487000" />
+      <workItem from="1606768654007" duration="18000" />
+      <workItem from="1606830599000" duration="12000" />
+      <workItem from="1607428633000" duration="82000" />
+      <workItem from="1609976761195" duration="17000" />
+      <workItem from="1610059869067" duration="15000" />
+      <workItem from="1610108842132" duration="79000" />
+      <workItem from="1611098069921" duration="208000" />
+      <workItem from="1611098368974" duration="600000" />
+      <workItem from="1611522396386" duration="706000" />
+      <workItem from="1611523312726" duration="680000" />
+      <workItem from="1611744638032" duration="1118000" />
+      <workItem from="1611745787240" duration="1457000" />
+      <workItem from="1611753031415" duration="36000" />
+      <workItem from="1611753086591" duration="857000" />
+      <workItem from="1611754175412" duration="69000" />
+      <workItem from="1611757828145" duration="523000" />
+      <workItem from="1611769940214" duration="1319000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="770" y="399" key="#Composer" timestamp="1606618518134">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="770" y="399" key="#Composer/0.0.1920.1040@0.0.1920.1040" timestamp="1606618518134" />
-    <state x="715" y="344" key="#Notifications" timestamp="1606618513213">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="715" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1606618513213" />
-    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1606661089378">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606661089378" />
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606692734026">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606692734026" />
-    <state x="2536" y="240" width="672" height="677" key="run.anything.popup" timestamp="1606750564260">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2536" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606750564260" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606688685031">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606688685031" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
