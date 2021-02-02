@@ -2,9 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1096c4ec-ab10-44c7-afe6-f869821cf090" name="Default Changelist" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/resources/views/layouts/menubar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/resources/views/layouts/menubar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/.php_cs.dist" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/.php_cs.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/VERSION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/ApiRequestor.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/ApiRequestor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/ApiResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/ApiResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/BaseStripeClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/BaseStripeClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Checkout/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Checkout/Session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Collection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Discount.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Discount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/EphemeralKey.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/EphemeralKey.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/HttpClient/CurlClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/HttpClient/CurlClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Invoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/LineItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/LineItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Person.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Stripe.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Stripe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/StripeObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/StripeObject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/TaxRate.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/TaxRate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Util/RequestOptions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Util/RequestOptions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Util/Util.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Util/Util.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/WebhookSignature.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/WebhookSignature.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/phpstan.neon.dist" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/phpstan.neon.dist" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +43,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ecommerce" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -137,6 +164,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kwiftegJEGH1I9GKPK0Y6Yiq3B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -146,7 +174,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ecommerce" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -212,6 +240,7 @@
       <workItem from="1611754175412" duration="69000" />
       <workItem from="1611757828145" duration="523000" />
       <workItem from="1611769940214" duration="1319000" />
+      <workItem from="1612301278609" duration="583000" />
     </task>
     <servers />
   </component>

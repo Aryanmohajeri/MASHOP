@@ -2,6 +2,7 @@
 @php
 
     $category = DB::table('categories')->get();
+
 @endphp
 
 <nav class="main_nav">
@@ -34,7 +35,6 @@
 
                             <li><a href="{{ route('blog.post') }}">Blog<i class="fas fa-chevron-down"></i></a></li>
 
-                            <li><a href="{{ route('contact.page') }}">Contact<i class="fas fa-chevron-down"></i></a></li>
                         </ul>
                     </div>
 
@@ -56,7 +56,7 @@
 
                     <div class="page_menu_search">
                         <form action="#">
-                            <input type="search" required="required" class="page_menu_search_input" placeholder="Search for products...">
+                            <input type="search" required="required" class="page_menu_search_input" placeholder="Search ss products...">
                         </form>
                     </div>
                     <ul class="page_menu_nav">

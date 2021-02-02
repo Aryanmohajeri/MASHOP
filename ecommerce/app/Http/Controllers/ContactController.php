@@ -6,12 +6,6 @@ use Illuminate\Http\Request;
 use DB;
 class ContactController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth:admin');
-    }
-
-
 
     public function Contact(){
         return view('pages.contact');
