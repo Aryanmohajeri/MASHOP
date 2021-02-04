@@ -3,17 +3,17 @@
 @section('admin_content')
 
  <div class="sl-mainpanel">
-     
+
 
       <div class="sl-pagebody">
         <div class="sl-page-title">
           <h5>This Date Report</h5>
-         
+
         </div><!-- sl-page-title -->
 
         <div class="card pd-20 pd-sm-40">
           <h6 class="card-body-title"> <span class="badge badge-success"><h5>  Total Amount This Date $ {{ $total }}</h5> </span>  </h6>
-           
+
 
           <div class="table-wrapper">
             <table id="datatable1" class="table display responsive nowrap">
@@ -27,7 +27,7 @@
                   <th class="wd-20p">Date</th>
                   <th class="wd-20p">Status</th>
                   <th class="wd-20p">Action</th>
-                  
+
                 </tr>
               </thead>
               <tbody>
@@ -44,38 +44,38 @@
              @if($row->status == 0)
             <span class="badge badge-warning">Pending</span>
             @elseif($row->status == 1)
-            <span class="badge badge-info">Payment Accept</span>
+            <span class="badge badge-info">Payment Accepted</span>
             @elseif($row->status == 2)
-            <span class="badge badge-warning">Progress</span>
+            <span class="badge badge-warning">Progress Delivery</span>
             @elseif($row->status == 3)
-            <span class="badge badge-success">Delevered</span>
+            <span class="badge badge-success">Delivered</span>
             @else
-            <span class="badge badge-danger">Cancle</span>
+            <span class="badge badge-danger">Cancelled</span>
 
-          @endif  
+          @endif
 
                </td>
 
                   <td>
                     <a href="{{ URL::to('admin/view/order/'.$row->id) }} " class="btn btn-sm btn-info">View</a>
-                    
+
                   </td>
-                   
+
                 </tr>
                 @endforeach
-                 
+
               </tbody>
             </table>
           </div><!-- table-wrapper -->
         </div><!-- card -->
 
-        
 
- 
+
+
     </div><!-- sl-mainpanel -->
 
 
- 
- 
+
+
 
 @endsection

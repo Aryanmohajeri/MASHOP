@@ -163,6 +163,8 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+      <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth1-client" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kenFne0OYrq5SyRiW5Az7l3AnZ" />
@@ -179,7 +181,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecommerce2.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -192,6 +194,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MAMP\htdocs\MASHOP\ecommerce\resources\views" />
+      <recent name="C:\MAMP\htdocs\MASHOP\ecommerce\app\Mail" />
       <recent name="C:\xampp\htdocs\MASHOP\ecommerce\resources\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -226,6 +230,8 @@
       <workItem from="1611844427964" duration="134000" />
       <workItem from="1611846176150" duration="92000" />
       <workItem from="1612299570083" duration="1368000" />
+      <workItem from="1612456550770" duration="2264000" />
+      <workItem from="1612459026115" duration="1300000" />
     </task>
     <servers />
   </component>

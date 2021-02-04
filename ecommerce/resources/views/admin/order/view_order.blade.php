@@ -42,7 +42,7 @@
 
                                     <tr>
                                         <th> Total : </th>
-                                        <th> {{ $order->total }} $ </th>
+                                        <th> £{{ $order->total }}  </th>
                                     </tr>
 
                                     <tr>
@@ -118,13 +118,13 @@
                                             @if($order->status == 0)
                                                 <span class="badge badge-warning">Pending</span>
                                             @elseif($order->status == 1)
-                                                <span class="badge badge-info">Payment Accept</span>
+                                                <span class="badge badge-info">Payment Accepted</span>
                                             @elseif($order->status == 2)
-                                                <span class="badge badge-warning">Progress</span>
+                                                <span class="badge badge-warning">Progress Delivery</span>
                                             @elseif($order->status == 3)
-                                                <span class="badge badge-success">Delevered</span>
+                                                <span class="badge badge-success">Delivery</span>
                                             @else
-                                                <span class="badge badge-danger">Cancle</span>
+                                                <span class="badge badge-danger">Cancelled</span>
 
                                             @endif
 
@@ -162,7 +162,7 @@
                                     <th class="wd-15p">Color</th>
                                     <th class="wd-15p">Size</th>
                                     <th class="wd-15p">Quantity</th>
-                                    <th class="wd-15p">Unit Price</th>
+                                    <th class="wd-15p">Unit Price £</th>
                                     <th class="wd-20p">Total</th>
 
                                 </tr>
@@ -202,7 +202,7 @@
                 @elseif($order->status == 4)
                     <strong class="text-danger text-center"> This order are not valid  </strong>
                 @else
-                    <strong class="text-success text-center">This product are successfuly Deleverd  </strong>
+                    <strong class="text-success text-center">This product has successfuly Delivered  </strong>
                 @endif
 
 

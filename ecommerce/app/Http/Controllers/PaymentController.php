@@ -7,7 +7,8 @@ use Auth;
 use DB;
 use Cart;
 use Session;
-
+use App\Mail\InvoiceMail;
+use Mail;
 
 class PaymentController extends Controller
 {
@@ -80,6 +81,8 @@ class PaymentController extends Controller
         $data['year'] = date('Y');
         $order_id = DB::table('orders')->insertGetId($data);
 
+        // Mail send to user for Invoice
+        Mail::to($email)->send(new InvoiceMail($data));
 
 
         /// Insert Shipping Table

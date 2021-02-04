@@ -166,9 +166,9 @@ Route::get('payment/page', 'CartController@paymentPage')->name('payment.step');
 Route::post('user/payment/process/', 'PaymentController@paymentProcess')->name('payment.process');
 
 // Product details Page
-Route::get('products/{id}', 'ProductController@productsView');
+Route::get('products/{id}', 'ProductController@subcategoryView');
 Route::get('all_category/{id}', 'ProductController@categoryView');
-Route::get('subcategories/{id}', 'ProductController@productsView');
+Route::get('subcategories/{id}', 'ProductController@subcategoryView');
 Route::post('user/stripe/charge/', 'PaymentController@stripeCharge')->name('stripe.charge');
 
 // Order Tracking Route
@@ -227,7 +227,7 @@ Route::post('contact/form', 'ContactController@contactForm')->name('contact.form
 Route::get('admin/all/message', 'ContactController@allMessage')->name('all.message');
 
 // Search Route
-Route::post('product/search', 'CartController@Search')->name('product.search');
+Route::post('product/search', 'ProductController@productSearch')->name('product.search');
 
 
 //google

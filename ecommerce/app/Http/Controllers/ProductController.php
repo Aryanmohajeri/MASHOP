@@ -65,34 +65,51 @@ class ProductController extends Controller
         }
 
     }
-    public function productsView($id){
+//    public function productsView($id){
+//
+//        $products = DB::table('products')->where('subcategory_id',$id)->paginate(10);
+//
+//        $categories = DB::table('categories')->get();
+//
+//        $brands = DB::table('products')->where('subcategory_id',$id)->select('brand_id')->groupBy('brand_id')->get();
+//
+//        return view('pages.all_products',compact('products','categories','brands'));
+//
+//
+//    }
 
+
+    public function categoryView($id){
+        $catname = DB::table('categories')->where('id',$id)->get();
+
+        $category_all =  DB::table('products')->where('category_id',$id)->paginate(10);
+        return view('pages.all_category',compact('category_all','catname'));
+
+    }
+
+    public function subcategoryView($id){
         $products = DB::table('products')->where('subcategory_id',$id)->paginate(10);
 
         $categories = DB::table('categories')->get();
 
         $brands = DB::table('products')->where('subcategory_id',$id)->select('brand_id')->groupBy('brand_id')->get();
 
-        return view('pages.all_products',compact('products','categories','brands'));
+        $subcatname = DB::table('subcategories')->where('id',$id)->get();
+
+        return view('pages.all_products',compact('products','categories','brands','subcatname'));
+    }
+
+    public function productSearch(Request $request){
+        $item = $request->search;
+        // echo "$item";
+
+        $products = DB::table('products')
+            ->where('product_name','LIKE',"%$item%")
+            ->paginate(20);
+
+        return view('pages.search',compact('products'));
 
 
     }
-
-
-    public function categoryView($id){
-
-        $category_all =  DB::table('products')->where('category_id',$id)->paginate(10);
-        return view('pages.all_category',compact('category_all'));
-
-    }
-
-    public function subcategoryView($id){
-
-        $category_all =  DB::table('products')->where('category_id',$id)->paginate(10);
-        return view('pages.all_category',compact('category_all'));
-
-    }
-
-
 }
 

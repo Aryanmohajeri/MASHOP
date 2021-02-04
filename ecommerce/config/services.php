@@ -32,7 +32,7 @@ return [
     'google' => [
         'client_id' => '655032266471-3msc89oic5udlg6h8gmg43k86o4l1e1n.apps.googleusercontent.com',
         'client_secret' => 'TXf4gZKiSEEolchcCwEtkwmD',
-        'redirect' => 'https://localhost/mashop/ecommerce/callback',
+        'redirect' => 'http://localhost/MASHOP/ecommerce/callback/google',
     ],
 
 ];
