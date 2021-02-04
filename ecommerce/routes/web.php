@@ -225,3 +225,12 @@ Route::get('contact/page', 'ContactController@Contact')->name('contact.page');
 Route::post('contact/form', 'ContactController@contactForm')->name('contact.form');
 
 Route::get('admin/all/message', 'ContactController@allMessage')->name('all.message');
+
+// Search Route
+Route::post('product/search', 'CartController@Search')->name('product.search');
+
+
+//google
+
+Route::get('auth/redirect/{provider}', 'SocialController@redirect');
+Route::get('/callback/{provider}', 'SocialController@callback');

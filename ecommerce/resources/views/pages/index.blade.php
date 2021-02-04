@@ -2,7 +2,7 @@
 @section('content')
 
     @include('layouts.menubar')
-
+    @include('layouts.slider')
 
     @php
         $featured = DB::table('products')->where('status',1)->orderBy('id','desc')->limit(8)->get();
@@ -155,7 +155,7 @@
                         </div>
                     </div>
 
-                    <!-- Featured -->
+                    <!-- Recently Added -->
                     <div class="featured">
                         <div class="tabbed_container">
                             <div class="tabs">
@@ -208,8 +208,6 @@
                                                                 @endphp
                                                                 {{intval($discount)}}%</li>
                                                         @endif
-
-
                                                     </ul>
                                                 </div>
                                             </div>
@@ -221,14 +219,65 @@
 
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Banner -->
+    @php
+        $mid = DB::table('products')
+               ->join('categories','products.category_id','categories.id')
+               ->join('brands','products.brand_id','brands.id')
+               ->select('products.*','brands.brand_name','categories.category_name')
+               ->where('products.mid_slider',1)->orderBy('id','DESC')->limit(3)
+               ->get();
+
+    @endphp
+
+
+    <div class="banner_2">
+        <div class="banner_2_background" style="background-image:url({{ asset('public/frontend/images/banner_2_background.jpg')}})"></div>
+        <div class="banner_2_container">
+            <div class="banner_2_dots"></div>
+            <!-- Banner 2 Slider -->
+
+            <div class="owl-carousel owl-theme banner_2_slider">
+            @foreach($mid as $row)
+                <!-- Banner 2 Slider Item -->
+                    <div class="owl-item">
+                        <div class="banner_2_item">
+                            <div class="container fill_height">
+                                <div class="row fill_height">
+                                    <div class="col-lg-4 col-md-6 fill_height">
+                                        <div class="banner_2_content">
+                                            <div class="banner_2_category"><h4>{{ $row->category_name }}</h4></div>
+                                            <div class="banner_2_title">{{ $row->product_name }}</div>
+                                            <div class="banner_2_text"><h4> {{ $row->brand_name }}</h4> <br>
+                                                <h2>${{ $row->selling_price }} </h2>
+
+                                            </div>
+                                            <div class="rating_r rating_r_4 banner_2_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                            <div class="button banner_2_button"><a href="#">Explore</a></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 fill_height">
+                                        <div class="banner_2_image_container">
+                                            <div class="banner_2_image"><img src="{{ asset( $row->image_one )}} " alt="" style="height: 300px; width: 250px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
 
             </div>
         </div>
     </div>
-    </div>
-
-
     <!-- Category One -->
+
     @php
         $cats = DB::table('categories')->skip(0)->first();
         $catid = $cats->id;
@@ -314,7 +363,7 @@
 
 
     </div>
-
+    </div>
 
     <!-- Category Two -->
     @php
@@ -490,7 +539,7 @@
         </div>
 
 
-    </div>
+
 
 
     <!-- Category Four -->
@@ -756,52 +805,10 @@
     </div>
 
 
-    <!-- Recently Viewed -->
-
-    <div class="viewed">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="viewed_title_container">
-                        <h3 class="viewed_title">Recently Viewed</h3>
-                        <div class="viewed_nav_container">
-                            <div class="viewed_nav viewed_prev"><i class="fas fa-chevron-left"></i></div>
-                            <div class="viewed_nav viewed_next"><i class="fas fa-chevron-right"></i></div>
-                        </div>
-                    </div>
-
-                    <div class="viewed_slider_container">
-
-                        <!-- Recently Viewed Slider -->
-
-                        <div class="owl-carousel owl-theme viewed_slider">
-
-                            <!-- Recently Viewed Item -->
-                            <div class="owl-item">
-                                <div class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-                                    <div class="viewed_image"><img src="{{asset('public/frontend/images/view_1.jpg')}}" alt=""></div>
-                                    <div class="viewed_content text-center">
-                                        <div class="viewed_price">$225<span>$300</span></div>
-                                        <div class="viewed_name"><a href="#">Beoplay H7</a></div>
-                                    </div>
-                                    <ul class="item_marks">
-                                        <li class="item_mark item_discount">-25%</li>
-                                        <li class="item_mark item_new">new</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
     <!-- Newsletter -->
-
     <div class="newsletter">
         <div class="container">
             <div class="row">
@@ -825,8 +832,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- Modal -->
     <div class="modal fade" id="cartmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLavel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">

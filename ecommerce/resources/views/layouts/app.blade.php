@@ -98,6 +98,7 @@
                     <!-- Logo -->
                     <div class="col-lg-2 col-sm-3 col-3 order-1">
                         <div class="logo_container">
+                            <div class="logo"><a href="{{ url('/') }}"><img src="{{ asset('public/frontend/images/logo.png')}}" alt=""></a></div>
                         </div>
                     </div>
 
@@ -109,18 +110,19 @@
                         <div class="header_search">
                             <div class="header_search_content">
                                 <div class="header_search_form_container">
-                                    <form action="#" class="header_search_form clearfix">
-                                        <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+                                    <form method="post" action="{{route('product.search')}}" class="header_search_form clearfix">
+                                        @csrf
+                                        <input type="search" required="required" class="header_search_input" placeholder="Search for products..." name="search">
                                         <div class="custom_dropdown">
                                             <div class="custom_dropdown_list">
                                                 <span class="custom_dropdown_placeholder clc">All Categories</span>
                                                 <i class="fas fa-chevron-down"></i>
-                        <ul class="custom_list clc">
-                            @foreach($category as $row )
-                            <li><a class="clc" href="#">{{$row->category_name}}</a></li>
-                            @endforeach
-                        </ul>
-                                            </div>
+                                                 <ul class="custom_list clc">
+                                                 @foreach($category as $row )
+                                                         <li><a class="clc" href="#">{{$row->category_name}}</a></li>
+                                                         @endforeach
+                                                     </ul>
+                                                 </div>
                                         </div>
                                         <button type="submit" class="header_search_button trans_300" value="Submit"><img src="{{asset('public/frontend/images/search.png')}}" alt=""></button>
                                     </form>

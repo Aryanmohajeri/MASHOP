@@ -29,5 +29,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'google' => [
+        'client_id' => '655032266471-3msc89oic5udlg6h8gmg43k86o4l1e1n.apps.googleusercontent.com',
+        'client_secret' => 'TXf4gZKiSEEolchcCwEtkwmD',
+        'redirect' => 'https://localhost/mashop/ecommerce/callback',
+    ],
 
 ];
