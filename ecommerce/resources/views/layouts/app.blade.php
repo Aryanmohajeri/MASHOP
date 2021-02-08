@@ -75,7 +75,7 @@
                                             <ul>
                                                 <li><a href="{{route('user.wishlist')}}">Wishlist</a></li>
                                                 <li><a href="{{route('user.checkout')}}">Checkout</a></li>
-                                                <li><a href="" data-toggle="modal" data-target="#exampleModal">My Order Tracking</a></li>
+                                                <li><a href="" data-toggle="modal" data-target="#trackOrder">My Order Tracking</a></li>
                                                 <li><a  href="{{route('user.logout')}}" style="color: red">Log Out</a></li>
 
                                             </ul>
@@ -98,7 +98,7 @@
                     <!-- Logo -->
                     <div class="col-lg-2 col-sm-3 col-3 order-1">
                         <div class="logo_container">
-                            <div class="logo"><a href="{{ url('/') }}"><img src="{{ asset('public/frontend/images/logo.png')}}" alt=""></a></div>
+                            <div class="logo"><a href="{{ url('/') }}"><img src="{{ asset('public/frontend/images/logo.png')}}" alt="" width="120px" height="120px"></a></div>
                         </div>
                     </div>
 
@@ -225,7 +225,7 @@
                             <div class="footer_title">Customer Care</div>
                             <ul class="footer_list">
                                 <li><a href="{{route('home')}}">My Account</li>
-                                <li><a href="" data-toggle="modal" data-target="#exampleModal">My Order Tracking</a></li>
+                                <li><a href="" data-toggle="modal" data-target="#trackOrder">My Order Tracking</a></li>
                                 <li><a href="{{route('user.wishlist')}}">Wish list</a></li>
                                 <li><a href="{{ route('contact.page') }}">Customer Service</a></li>
                                 <li><a href="#">Returns / Exchange</a></li>
@@ -241,8 +241,8 @@
 
 
 
-<!--Order Trackinng Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--Order Tracking Modal -->
+<div class="modal fade" id="trackOrder" tabindex="-1" role="dialog" aria-labelledby="trackOrderLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -286,7 +286,9 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script src="{{ asset('https://unpkg.com/sweetalert/dist/sweetalert.min.js')}}"></script>
 
-
+        <script type="text/javascript">
+            document.body.appendChild(document.getElementById('trackOrder'));
+        </script>
 
 <script>
     @if(Session::has('messege'))
