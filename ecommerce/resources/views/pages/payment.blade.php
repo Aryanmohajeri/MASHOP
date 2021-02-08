@@ -164,10 +164,6 @@ $vat = $setting->vat;
 
                  <select id="country" name="country" class="form-control">
                      <option value="United Kingdom">United Kingdom</option>
-                     <option value="United States">United States</option>
-                     <option value="Spain">Spain</option>
-                     <option value="Portugal">Portugal</option>
-
              </div>
 
     <div class="contact_form_title text-center"> Payment By </div>

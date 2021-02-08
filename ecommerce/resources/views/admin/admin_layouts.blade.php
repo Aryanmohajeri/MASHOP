@@ -139,6 +139,23 @@
                 <li class="nav-item"><a href="{{ route('admin.process.payment') }}" class="nav-link">Process Delivery </a></li>
                 <li class="nav-item"><a href="{{ route('admin.success.payment') }}" class="nav-link">Delivery Success </a></li>
             </ul>
+
+
+            <a href="#" class="sl-menu-link">
+                <div class="sl-menu-item">
+
+                    <i class="menu-item-icon icon ion-ios-cart tx-24"></i>
+                    <span class="menu-item-label">Raffles</span>
+                    <i class="menu-item-arrow fa fa-angle-down"></i>
+                </div><!-- menu-item -->
+            </a><!-- sl-menu-link -->
+            <ul class="sl-menu-sub nav flex-column">
+                <li class="nav-item"><a href="{{route('admin.neworder')}}" class="nav-link">New Orders</a></li>
+                <li class="nav-item"><a href="{{ route('admin.accept.payment') }}" class="nav-link">Accept Payment </a></li>
+                <li class="nav-item"><a href="{{ route('admin.cancel.order') }}" class="nav-link">Cancel Order </a></li>
+                <li class="nav-item"><a href="{{ route('admin.process.payment') }}" class="nav-link">Process Delivery </a></li>
+                <li class="nav-item"><a href="{{ route('admin.success.payment') }}" class="nav-link">Delivery Success </a></li>
+            </ul>
 {{--            @else--}}
 {{--            @endif--}}
 {{--Blog--}}

@@ -169,8 +169,11 @@ $cart = Cart::Content();
 <div class="col-lg-5" style="border: 1px solid grey; padding: 20px; border-radius: 25px;">
                     <div class="contact_form_container">
                         <div class="contact_form_title text-center">Shipping Address</div>
-
-            <form action="{{ route('stripe.charge') }}" method="post" id="payment-form">
+            @if( Cart::content()->first()->options->category_id)
+               <form action="{{ route('raffle.process') }}" method="post" id="payment-form">
+            @else
+                <form action="{{ route('stripe.charge') }}" method="post" id="payment-form">
+             @endif
               @csrf
               <div class="form-row">
                 <label for="card-element">

@@ -170,6 +170,7 @@ Route::get('products/{id}', 'ProductController@subcategoryView');
 Route::get('all_category/{id}', 'ProductController@categoryView');
 Route::get('subcategories/{id}', 'ProductController@subcategoryView');
 Route::post('user/stripe/charge/', 'PaymentController@stripeCharge')->name('stripe.charge');
+Route::post('user/stripe/charge/', 'PaymentController@raffles')->name('raffle.process');
 
 // Order Tracking Route
 Route::post('order/tracking', 'FrontController@orderTraking')->name('order.tracking');

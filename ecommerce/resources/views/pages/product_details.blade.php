@@ -87,10 +87,18 @@
                                 @else
                                     <div class="product_price">£{{ $product->discount_price }}<span>£{{ $product->selling_price }}</span></div>
                                 @endif
+
+                                @if($product->category_id == 13)
                                 <div class="button_container">
-                                    <button type="submit" class="button cart_button">Add to Cart</button>
+                                    <button type="submit" class="button cart_button">Enter Raffle</button>
                                     <div class="product_fav"><i class="fas fa-heart"></i></div>
                                 </div>
+                                @else
+                            <div class="button_container">
+                                <button type="submit" class="button cart_button">Add to Cart</button>
+                                <div class="product_fav"><i class="fas fa-heart"></i></div>
+                            </div>
+                            @endif
 
                         <br><br>
                         <!-- Go to www.addthis.com/dashboard to customize your tools -->

@@ -25,7 +25,7 @@ class ProductController extends Controller
         return view('pages.product_details',compact('product','product_color','product_size'));
     }
 
-    public function AddCart(Request $request, $id){
+    public function addCart(Request $request, $id){
         $product = DB::table('products')->where('id',$id)->first();
 
         $data = array();
@@ -36,6 +36,7 @@ class ProductController extends Controller
             $data['qty'] = $request->qty;
             $data['price'] = $product->selling_price;
             $data['weight'] = 1;
+            $data['options']['category_id'] = $product->category_id;
             $data['options']['image'] = $product->image_one;
             $data['options']['color'] = $request->color;
             $data['options']['size'] = $request->size;
@@ -47,11 +48,12 @@ class ProductController extends Controller
             return Redirect()->back()->with($notification);
         }else{
 
-            $data['id'] = $product->id;
+            $data['id'] = $product->category_id;
             $data['name'] = $product->product_name;
             $data['qty'] = $request->qty;
             $data['price'] = $product->discount_price;
             $data['weight'] = 1;
+            $data['options']['category_id'] = $product->category_id;
             $data['options']['image'] = $product->image_one;
             $data['options']['color'] = $request->color;
             $data['options']['size'] = $request->size;
