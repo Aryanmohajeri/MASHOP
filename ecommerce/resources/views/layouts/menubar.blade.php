@@ -52,6 +52,9 @@
                             <li><a href="#">Home<i class="fas fa-chevron-down"></i></a></li>
                             <li><a href="{{ route('blog.post') }}">Blog<i class="fas fa-chevron-down"></i></a></li>
                             <li><a href="{{ route('contact.page') }}">Contact<i class="fas fa-chevron-down contactform"></i></a></li>
+                            <li><a href="{{ route('contact.page') }}">Raffle<i class="fas fa-chevron-down contactform"></i></a></li>
+                            <li><a href="{{ route('contact.page') }}">About Us<i class="fas fa-chevron-down contactform"></i></a></li>
+
                         </ul>
                     </div>
 
@@ -68,7 +71,7 @@
                         <ul class="cat_menu">
                             <li><a href="#">Home<i class="fas fa-chevron-down"></i></a></li>
                             <li><a href="{{ route('blog.post') }}">Blog<i class="fas fa-chevron-down"></i></a></li>
-                            <li><a href="{{ route('contact.page') }}">Contact<i class="fas fa-chevron-down contactform"></i></a></li>
+                            <li><a href="{{ route('contact.page') }}">Contact<i class="fas fa-chevron-down contactform"></i></a></
                         </ul>
                     </div>
 

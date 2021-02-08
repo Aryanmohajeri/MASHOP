@@ -283,7 +283,7 @@
         $catid = $cats->id;
         $product = DB::table('products')->where('category_id',$catid)->where('status',1)->limit(10)->orderBy('id','DESC')->get();
     @endphp
-    <div class="new_arrivals">
+    <div class="category_one">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -306,7 +306,7 @@
                                     @foreach($product as $row)
                                         <!-- Slider Item -->
                                             <a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}">
-                                                <div class="featured_slider_item">
+                                                <div class="catone_slider_item">
                                                     <div class="border_active"></div>
                                                     <div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                                         <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="{{ asset( $row->image_one )}}" alt="" style="height: 120px; width: 100px;"></div>

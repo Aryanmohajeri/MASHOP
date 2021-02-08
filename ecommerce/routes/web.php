@@ -234,3 +234,6 @@ Route::post('product/search', 'ProductController@productSearch')->name('product.
 
 Route::get('auth/redirect/{provider}', 'SocialController@redirect');
 Route::get('/callback/{provider}', 'SocialController@callback');
+
+
+Route::get('aboutus','AboutusController@blogPost')->name('about.us');

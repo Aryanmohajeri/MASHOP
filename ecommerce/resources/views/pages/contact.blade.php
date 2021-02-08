@@ -3,10 +3,10 @@
 @section('content')
 @include('layouts.menubar')
 
-@php
+@php 
  $site = DB::table('sitesetting')->first();
 
-@endphp
+@endphp 
 
 <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/styles/contact_styles.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/styles/contact_responsive.css') }}">
@@ -19,19 +19,27 @@
 				<div class="col-lg-10 offset-lg-1">
 					<div class="contact_info_container d-flex flex-lg-row flex-column justify-content-between align-items-between">
 
-                        <div class="col-lg-3 col-md-6 char_col">
-
 						<!-- Contact Item -->
 						<div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
-							<div class="contact_info_image"><img src="{{ asset('public/frontend/images/contact_2.png')}}" alt=""></div>
+							<div class="contact_info_image"><img src="{{asset('public/frontend/images/contact_1.png')}}" alt=""></div>
 							<div class="contact_info_content">
-								<div class="contact_info_title">Email</div>
+								<div class="contact_info_title">Phone</div>
+								<div class="contact_info_text">{{ $site->phone_one }}</div>
 							</div>
 						</div>
 
 						<!-- Contact Item -->
 						<div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
-							<div class="contact_info_image"><img src="{{ asset('public/frontend/images/contact_3.png')}}" alt=""></div>
+							<div class="contact_info_image"><img src="{{asset('public/frontend/images/contact_2.png')}}" alt=""></div>
+							<div class="contact_info_content">
+								<div class="contact_info_title">Email</div>
+								<div class="contact_info_text">{{ $site->email }}</div>
+							</div>
+						</div>
+
+						<!-- Contact Item -->
+						<div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
+							<div class="contact_info_image"><img src="{{asset('public/frontend/images/contact_3.png')}}" alt=""></div>
 							<div class="contact_info_content">
 								<div class="contact_info_title">Address</div>
 								<div class="contact_info_text">{{ $site->company_address }}</div>
@@ -66,7 +74,7 @@
 </div>
 <div class="contact_form_text">
 <textarea id="contact_form_message" class="text_field contact_form_message" name="message" rows="4" placeholder="Message" required="required" data-error="Please, write us a message."></textarea>
-</div>
+</div> 
 							<div class="contact_form_button">
 								<button type="submit" class="button contact_submit_button">Send Message</button>
 							</div>

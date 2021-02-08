@@ -91,14 +91,13 @@
 							<div class="product_grid_border"></div>
 
                      @foreach($category_all as $pro)
-                   		@if($pro->status == 1)
 							<!-- Product Item -->
                             <a href="{{ url('product/details/'.$pro->id.'/'.$pro->product_name) }}">
 							<div class="product_item is_new" >
 								<div class="product_border"></div>
 								<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="{{ asset($pro->image_one) }}" alt="" style="height: 100px; width: 100px;"></div>
 								<div class="product_content">
-	
+
 
 					  @if($pro->discount_price == NULL)
 <div class="product_price discount" style="color: black">£{{ $pro->selling_price }}<span> </div>
@@ -108,10 +107,9 @@
 
  <div class="product_name"><div>{{ $pro->product_name  }}</div></div>
 								</div>
-							
-							
                                 <a/>
 								<div class="product_fav"><i class="fas fa-heart"></i></div>
+
 
 								 <ul class="product_marks">
        @if($pro->discount_price == NULL)
@@ -130,7 +128,6 @@
                         @endif
             </ul>
 							</div>
-@endif
 
                           @endforeach
 
