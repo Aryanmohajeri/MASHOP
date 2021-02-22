@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<skipper version="3.2.31.1730" mvc="Laravel" orm="Laravel" name="Ecommerce" uuid="c2d5fd9e-b4df-4a64-a7e3-fc479e03101f">
+  <orm-attributes>
+    <attribute name="migrations-path">database/migrations</attribute>
+  </orm-attributes>
+  <module name="\Application module" local-name="Application module" namespace="\App\Models" local-namespace="App\Models" export-format="Laravel" export-path="." uuid="83892e0c-31cf-4136-b1d6-f9279c927180">
+    <entity name="\App\Models\SampleEntity" local-name="SampleEntity" namespace="\App\Models" uuid="85ed535d-a6c6-44fe-8be6-cf6ce0dafa89">
+      <field name="id" type="bigInteger" required="true" unique="true" primary="true" unsigned="true" auto-increment="true" uuid="750c683d-8920-4493-8dbb-1f4ec365b178"/>
+      <field name="created_at" type="timestamp" uuid="a6485c40-c3a6-4210-b7be-d4f3c366899a"/>
+      <field name="updated_at" type="timestamp" uuid="0c925f4c-7bb9-45a4-9f88-e97b0a67c17a"/>
+      <field name="name" type="string" size="255" uuid="75066a44-6792-4143-bd95-c9261da50fe5"/>
+    </entity>
+  </module>
+  <visual-data>
+    <entity uuid="85ed535d-a6c6-44fe-8be6-cf6ce0dafa89" bg-color="#FFFFFF" hdr-color="#D2D2D2" position-x="10" position-y="20"/>
+    <module uuid="83892e0c-31cf-4136-b1d6-f9279c927180" bg-color="#FEFCE8" position-x="61" position-y="72" size-x="11" size-x2="243" size-y="22" size-y2="191"/>
+    <project uuid="c2d5fd9e-b4df-4a64-a7e3-fc479e03101f" size-x="0" size-x2="354" size-y="0" size-y2="313"/>
+  </visual-data>
+</skipper>

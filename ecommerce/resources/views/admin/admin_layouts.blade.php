@@ -4,29 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Twitter -->
-    <meta name="twitter:site" content="@themepixels">
-    <meta name="twitter:creator" content="@themepixels">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Starlight">
-    <meta name="twitter:description" content="Premium Quality and Responsive UI for Dashboard.">
-    <meta name="twitter:image" content="http://themepixels.me/starlight/img/starlight-social.png">
-
-    <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/starlight">
-    <meta property="og:title" content="Starlight">
-    <meta property="og:description" content="Premium Quality and Responsive UI for Dashboard.">
-
     <meta property="og:image" content="http://themepixels.me/starlight/img/starlight-social.png">
     <meta property="og:image:secure_url" content="http://themepixels.me/starlight/img/starlight-social.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
-
-    <!-- Meta -->
-    <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
-    <meta name="author" content="ThemePixels">
 
     <title>Mashop.com Admin Page</title>
 
@@ -143,18 +125,13 @@
 
             <a href="#" class="sl-menu-link">
                 <div class="sl-menu-item">
-
                     <i class="menu-item-icon icon ion-ios-cart tx-24"></i>
                     <span class="menu-item-label">Raffles</span>
                     <i class="menu-item-arrow fa fa-angle-down"></i>
                 </div><!-- menu-item -->
             </a><!-- sl-menu-link -->
             <ul class="sl-menu-sub nav flex-column">
-                <li class="nav-item"><a href="{{route('admin.neworder')}}" class="nav-link">New Orders</a></li>
-                <li class="nav-item"><a href="{{ route('admin.accept.payment') }}" class="nav-link">Accept Payment </a></li>
-                <li class="nav-item"><a href="{{ route('admin.cancel.order') }}" class="nav-link">Cancel Order </a></li>
-                <li class="nav-item"><a href="{{ route('admin.process.payment') }}" class="nav-link">Process Delivery </a></li>
-                <li class="nav-item"><a href="{{ route('admin.success.payment') }}" class="nav-link">Delivery Success </a></li>
+                <li class="nav-item"><a href="{{route('admin.neworder')}}" class="nav-link">Raffles</a></li>
             </ul>
 {{--            @else--}}
 {{--            @endif--}}

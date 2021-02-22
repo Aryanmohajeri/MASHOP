@@ -31,7 +31,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($order as $row)
+                        @foreach($raffle as $row)
                             <tr>
                                 <td>{{ $row->payment_type }}</td>
                                 <td>{{ $row->blnc_transection }}</td>

@@ -121,6 +121,11 @@ Route::get('admin/success/payment', 'Admin\OrderController@successPayment')->nam
 Route::get('admin/delivery/process/{id}', 'Admin\OrderController@deliveryProcess');
 Route::get('admin/delivery/done/{id}', 'Admin\OrderController@deliveryDone');
 
+
+//Admin Raffle Route
+Route::get('admin/raffles', 'Admin\OrderController@processPayment')->name('admin.process.payment');
+
+
 // SEO Setting Route
 Route::get('admin/seo', 'Admin\OrderController@seo')->name('admin.seo');
 Route::post('admin/seo/update', 'Admin\OrderController@updateSeo')->name('update.seo');
@@ -235,6 +240,3 @@ Route::post('product/search', 'ProductController@productSearch')->name('product.
 
 Route::get('auth/redirect/{provider}', 'SocialController@redirect');
 Route::get('/callback/{provider}', 'SocialController@callback');
-
-
-Route::get('aboutus','AboutusController@blogPost')->name('about.us');
