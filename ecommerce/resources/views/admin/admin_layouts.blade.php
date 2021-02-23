@@ -131,7 +131,7 @@
                 </div><!-- menu-item -->
             </a><!-- sl-menu-link -->
             <ul class="sl-menu-sub nav flex-column">
-                <li class="nav-item"><a href="{{route('admin.neworder')}}" class="nav-link">Raffles</a></li>
+                <li class="nav-item"><a href="{{route('all.product.raffle')}}" class="nav-link">Raffles</a></li>
             </ul>
 {{--            @else--}}
 {{--            @endif--}}

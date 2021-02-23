@@ -219,6 +219,14 @@
 
                             </div> <!-- col-4 -->
 
+                            <div class="col-lg-4">
+                                <label class="ckbox">
+                                    <input type="checkbox" name="raffle" value="1" <?php if ($product->raffle == 1) { echo "checked"; } ?> >
+                                    <span>Raffle</span>
+                                </label>
+
+                            </div> <!-- col-4 -->
+
 
                         </div><!-- end row -->
                         <br><br>

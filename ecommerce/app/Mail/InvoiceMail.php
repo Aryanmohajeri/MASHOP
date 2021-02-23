@@ -22,11 +22,13 @@ class InvoiceMail extends Mailable
     /**
      * Build the message.
      *
-     * @return $this
+     * @return
      */
     public function build()
     {
         $info = $this->data;
         return $this->from('mashoptech@gmail.com')->view('mail.invoice',compact('info'))->subject('Order Complete');
     }
+
+
 }

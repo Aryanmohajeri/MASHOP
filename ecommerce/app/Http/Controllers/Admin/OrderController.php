@@ -46,8 +46,6 @@ class OrderController extends Controller
         );
         return Redirect()->route('admin.neworder')->with($notification);
     }
-
-
     public function paymentCancel($id){
         DB::table('orders')->where('id',$id)->update(['status'=>4]);
         $notification=array(
@@ -56,35 +54,26 @@ class OrderController extends Controller
         );
         return Redirect()->route('admin.neworder')->with($notification);
     }
-
     public function acceptPayment(){
         $order = DB::table('orders')->where('status',1)->get();
         // dd($order);
         return view('admin.order.pending',compact('order'));
     }
-
-
     public function cancelOrder(){
         $order = DB::table('orders')->where('status',4)->get();
         // dd($order);
         return view('admin.order.pending',compact('order'));
     }
-
-
     public function processPayment(){
         $order = DB::table('orders')->where('status',2)->get();
         // dd($order);
         return view('admin.order.pending',compact('order'));
     }
-
-
-
     public function successPayment(){
         $order = DB::table('orders')->where('status',3)->get();
         // dd($order);
         return view('admin.order.pending',compact('order'));
     }
-
     public function deliveryProcess($id){
         DB::table('orders')->where('id',$id)->update(['status'=>2]);
         $notification=array(
@@ -93,10 +82,6 @@ class OrderController extends Controller
         );
         return Redirect()->route('admin.accept.payment')->with($notification);
     }
-
-
-
-
     public function deliveryDone($id){
 
         $product = DB::table('orders_details')->where('order_id',$id)->get();
@@ -113,14 +98,10 @@ class OrderController extends Controller
         );
         return Redirect()->route('admin.success.payment')->with($notification);
     }
-
-
     public function seo(){
         $seo = DB::table('seo')->first();
         return view('admin.coupon.seo',compact('seo'));
     }
-
-
     public function updateSeo(Request $request){
 
         $id = $request->id;

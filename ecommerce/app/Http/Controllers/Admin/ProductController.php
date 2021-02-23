@@ -65,6 +65,7 @@ class ProductController extends Controller
         $data['mid_slider'] = $request->mid_slider;
         $data['hot_new'] = $request->hot_new;
         $data['buyone_getone'] = $request->buyone_getone;
+        $data['raffle'] = $request->raffle;
         $data['status'] = 1;
 
         $image_one = $request->image_one;
@@ -180,6 +181,7 @@ class ProductController extends Controller
         $data['trend'] = $request->trend;
         $data['mid_slider'] = $request->mid_slider;
         $data['hot_new'] = $request->hot_new;
+        $data['raffle'] = $request->raffle;
         $data['buyone_getone'] = $request->buyone_getone;
 
         $update = DB::table('products')->where('id',$id)->update($data);

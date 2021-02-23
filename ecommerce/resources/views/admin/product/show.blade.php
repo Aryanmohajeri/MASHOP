@@ -219,6 +219,18 @@
                                 <span>Buy One Get One </span>
 
                             </div> <!-- col-4 -->
+
+
+                            <div class="col-lg-4">
+                                @if($product->raffle == 1)
+                                    <span class="badge badge-success">Active</span>
+
+                                @else
+                                    <span class="badge badge-danger">Inactive</span>
+                                @endif
+                                <span>Raffle</span>
+
+                            </div> <!-- col-4 -->
                         </div> <!--row-->
                     </div><!-- card -->
             </div>

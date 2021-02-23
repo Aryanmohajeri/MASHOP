@@ -69,10 +69,15 @@ Route::get('delete/sub/{id}', 'Admin\Category\CouponController@deleteSub');
 
 //All Product Routes:
 Route::get('admin/product/all', 'Admin\ProductController@index')->name('all.product');
+Route::get('admin/raffle/all', 'Admin\RaffleController@index')->name('all.product.raffle');
+Route::get('view/raffle/entries/{id}', 'Admin\RaffleController@viewRaffle');
 Route::get('admin/product/add', 'Admin\ProductController@createProduct')->name('add.product');
 Route::post('admin/store/product', 'Admin\ProductController@storeProduct')->name('store.product');
+Route::get('accept/raffle/{id}', 'Admin\RaffleController@acceptRaffle');
+Route::get('reject/raffle/{id}', 'Admin\RaffleController@deleteRaffle');
+Route::get('acceptRandom/raffle', 'Admin\RaffleController@randomRaffle')->name('random.raffle');
 
-//Active / Inactive product
+
 Route::get('inactive/product/{id}', 'Admin\ProductController@inactive');
 Route::get('active/product/{id}', 'Admin\ProductController@active');
 //Delete product
@@ -127,8 +132,8 @@ Route::get('admin/raffles', 'Admin\OrderController@processPayment')->name('admin
 
 
 // SEO Setting Route
-Route::get('admin/seo', 'Admin\OrderController@seo')->name('admin.seo');
-Route::post('admin/seo/update', 'Admin\OrderController@updateSeo')->name('update.seo');
+Route::get('admin/seo', 'Admin\SettingController@seo')->name('admin.seo');
+Route::post('admin/seo/update', 'Admin\SettingController@updateSeo')->name('update.seo');
 
 
 //Frontend Routes
