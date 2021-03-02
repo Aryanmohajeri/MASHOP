@@ -198,16 +198,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
-      <recent name="C:\MAMP\htdocs\ecommerce\resources\views\pages" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/mail" />
       <recent name="$PROJECT_DIR$/resources/views/admin/raffle" />
       <recent name="C:\MAMP\htdocs\MASHOP\ecommerce\resources\views" />
       <recent name="C:\MAMP\htdocs\MASHOP\ecommerce\app\Mail" />
       <recent name="C:\xampp\htdocs\MASHOP\ecommerce\resources\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
+      <recent name="C:\MAMP\htdocs\ecommerce\resources\views\pages" />
     </key>
   </component>
   <component name="RunManager">
@@ -246,6 +246,10 @@
       <workItem from="1613413458672" duration="798000" />
       <workItem from="1613937616427" duration="786000" />
       <workItem from="1614082374386" duration="10628000" />
+      <workItem from="1614275844474" duration="2344000" />
+      <workItem from="1614355842587" duration="2951000" />
+      <workItem from="1614443208521" duration="9000" />
+      <workItem from="1614454738427" duration="3000" />
     </task>
     <servers />
   </component>
@@ -270,22 +274,5 @@
       <path value="$PROJECT_DIR$/.." />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="378" y="147" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614097085935">
-      <screen x="0" y="25" width="1280" height="727" />
-    </state>
-    <state x="378" y="147" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1280.727@0.25.1280.727" timestamp="1614097085935" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/pages/index.blade.php</url>
-          <line>319</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

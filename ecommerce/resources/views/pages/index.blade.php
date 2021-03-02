@@ -13,63 +13,63 @@
                     ->select('products.*','brands.brand_name')
                     ->where('products.status',1)->where('hot_deal',1)->orderBy('id','desc')->limit(3)->get();
     @endphp
-    <!-- Characteristics -->
+{{--    <!-- Characteristics -->--}}
 
-    <div class="characteristics">
-        <div class="container">
-            <div class="row">
+{{--    <div class="characteristics">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
 
-                <!-- Char. Item -->
-                <div class="col-lg-3 col-md-6 char_col">
+{{--                <!-- Char. Item -->--}}
+{{--                <div class="col-lg-3 col-md-6 char_col">--}}
 
-                    <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                        <div class="char_icon"><img src="{{asset('public/frontend/images/char_1.png')}}" alt=""></div>
-                        <div class="char_content">
-                            <div class="char_title">Free Delivery</div>
-                            <div class="char_subtitle">from £50</div>
-                        </div>
-                    </div>
-                </div>
+{{--                    <div class="char_item d-flex flex-row align-items-center justify-content-start">--}}
+{{--                        <div class="char_icon"><img src="{{asset('public/frontend/images/char_1.png')}}" alt=""></div>--}}
+{{--                        <div class="char_content">--}}
+{{--                            <div class="char_title">Free Delivery</div>--}}
+{{--                            <div class="char_subtitle">from £50</div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <!-- Char. Item -->
-                <div class="col-lg-3 col-md-6 char_col">
+{{--                <!-- Char. Item -->--}}
+{{--                <div class="col-lg-3 col-md-6 char_col">--}}
 
-                    <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                        <div class="char_icon"><img src="{{asset('public/frontend/images/char_2.png')}}" alt=""></div>
-                        <div class="char_content">
-                            <div class="char_title">Free Delivery</div>
-                            <div class="char_subtitle">from £50</div>
-                        </div>
-                    </div>
-                </div>
+{{--                    <div class="char_item d-flex flex-row align-items-center justify-content-start">--}}
+{{--                        <div class="char_icon"><img src="{{asset('public/frontend/images/char_2.png')}}" alt=""></div>--}}
+{{--                        <div class="char_content">--}}
+{{--                            <div class="char_title">Free Delivery</div>--}}
+{{--                            <div class="char_subtitle">from £50</div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <!-- Char. Item -->
-                <div class="col-lg-3 col-md-6 char_col">
+{{--                <!-- Char. Item -->--}}
+{{--                <div class="col-lg-3 col-md-6 char_col">--}}
 
-                    <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                        <div class="char_icon"><img src="{{asset('public/frontend/images/char_3.png')}}" alt=""></div>
-                        <div class="char_content">
-                            <div class="char_title">Free Delivery</div>
-                            <div class="char_subtitle">from £50</div>
-                        </div>
-                    </div>
-                </div>
+{{--                    <div class="char_item d-flex flex-row align-items-center justify-content-start">--}}
+{{--                        <div class="char_icon"><img src="{{asset('public/frontend/images/char_3.png')}}" alt=""></div>--}}
+{{--                        <div class="char_content">--}}
+{{--                            <div class="char_title">Free Delivery</div>--}}
+{{--                            <div class="char_subtitle">from £50</div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <!-- Char. Item -->
-                <div class="col-lg-3 col-md-6 char_col">
+{{--                <!-- Char. Item -->--}}
+{{--                <div class="col-lg-3 col-md-6 char_col">--}}
 
-                    <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                        <div class="char_icon"><img src="{{asset('public/frontend/images/char_4.png')}}" alt=""></div>
-                        <div class="char_content">
-                            <div class="char_title">Free Delivery</div>
-                            <div class="char_subtitle">from £50</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+{{--                    <div class="char_item d-flex flex-row align-items-center justify-content-start">--}}
+{{--                        <div class="char_icon"><img src="{{asset('public/frontend/images/char_4.png')}}" alt=""></div>--}}
+{{--                        <div class="char_content">--}}
+{{--                            <div class="char_title">Free Delivery</div>--}}
+{{--                            <div class="char_subtitle">from £50</div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <!-- Deals of the week -->
     <div class="deals_featured">
         <div class="container">
@@ -222,8 +222,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- Banner -->
     @php
         $mid = DB::table('products')
@@ -234,8 +232,6 @@
                ->get();
 
     @endphp
-
-
     <div class="banner_2">
         <div class="banner_2_background" style="background-image:url({{ asset('public/frontend/images/banner_2_background.jpg')}})"></div>
         <div class="banner_2_container">
@@ -277,7 +273,6 @@
         </div>
     </div>
     <!-- Category One -->
-
     @php
         $cats = DB::table('categories')->skip(0)->first();
         $catid = $cats->id;
@@ -322,7 +317,7 @@
 
                                                             <div class="product_name"><div>{{ $row->product_name }}</a></div></div>
                                 <div class="product_extras">
-                                    <button class="product_cart_button addcart" data-id="{{$row->id}}">Add to Cart</button>
+                                    <button id="{{$row->id}}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
                                 </div>
                             </div>
 
@@ -363,8 +358,6 @@
 
 
     </div>
-    </div>
-
     <!-- Category Two -->
     @php
         $cats = DB::table('categories')->skip(1)->first();
@@ -372,7 +365,6 @@
 
         $product = DB::table('products')->where('category_id',$catid)->where('status',1)->limit(10)->orderBy('id','DESC')->get();
     @endphp
-    <div class="new_arrivals">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -411,7 +403,7 @@
 
                                                             <div class="product_name"><div>{{ $row->product_name }}</a></div></div>
                                 <div class="product_extras">
-                                    <button class="product_cart_button addcart" data-id="{{$row->id}}">Add to Cart</button>
+                                    <button id="{{$row->id}}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
                                 </div>
                             </div>
 
@@ -449,18 +441,12 @@
             </div>
 
         </div>
-
-
-    </div>
-
-
     <!-- Category Three -->
     @php
         $cats = DB::table('categories')->skip(2)->first();
         $catid = $cats->id;
         $product = DB::table('products')->where('category_id',$catid)->where('status',1)->limit(10)->orderBy('id','DESC')->get();
     @endphp
-    <div class="new_arrivals">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -499,7 +485,7 @@
 
                                                             <div class="product_name"><div>{{ $row->product_name }}</a></div></div>
                                 <div class="product_extras">
-                                    <button class="product_cart_button addcart" data-id="{{$row->id}}">Add to Cart</button>
+                                    <button id="{{$row->id}}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
                                 </div>
                             </div>
 
@@ -537,20 +523,12 @@
             </div>
 
         </div>
-
-
-
-
-
     <!-- Category Four -->
     @php
         $cats = DB::table('categories')->skip(3)->first();
         $catid = $cats->id;
-
         $product = DB::table('products')->where('category_id',$catid)->where('status',1)->limit(10)->orderBy('id','DESC')->get();
-
     @endphp
-    <div class="new_arrivals">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -580,21 +558,16 @@
                                                         <div class="product_content">
 
                                                             @if($row->discount_price == NULL)
-                                                                <div class="product_price discount" style="color: red">£{{ $row->selling_price }}<span> </div>
+                                                                <div class="product_price discount" style="color: black">£{{ $row->selling_price }}<span> </div>
                                                             @else
-                                                                <div class="product_price discount" style="color: black">£{{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
+                                                                <div class="product_price discount" style="color: red">£{{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
                                                             @endif
 
 
 
                                                             <div class="product_name"><div>{{ $row->product_name }}</a></div></div>
                                 <div class="product_extras">
-                                    <div class="product_color">
-                                        <input type="radio" checked name="product_color" style="background:#b19c83">
-                                        <input type="radio" name="product_color" style="background:#000000">
-                                        <input type="radio" name="product_color" style="background:#999999">
-                                    </div>
-                                    <button class="product_cart_button addcart" data-id="{{$row->id}}">Add to Cart</button>
+                                    <button id="{{$row->id}}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
                                 </div>
                             </div>
 
@@ -632,11 +605,6 @@
             </div>
 
         </div>
-
-
-    </div>
-
-
     <!-- Category Five -->
     @php
         $cats = DB::table('categories')->skip(4)->first();
@@ -644,7 +612,6 @@
         $product = DB::table('products')->where('category_id',$catid)->where('status',1)->limit(10)->orderBy('id','DESC')->get();
 
     @endphp
-    <div class="new_arrivals">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -687,9 +654,9 @@
                                         <input type="radio" checked name="product_color" style="background:#b19c83">
                                         <input type="radio" name="product_color" style="background:#000000">
                                         <input type="radio" name="product_color" style="background:#999999">
-                                    </div>
-                                    <button class="product_cart_button addcart" data-id="{{$row->id}}">Add to Cart</button>
-                                </div>
+                                        <div class="product_extras">
+                                            <button id="{{$row->id}}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
+                                        </div>
                             </div>
 
 
@@ -783,7 +750,9 @@
                                                     <div class="product_price discount">${{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
                                                 @endif
 
-                                                <a href="" class="btn btn-danger btn-sm">Add to cart</a>
+                                                <div class="product_extras">
+                                                    <button id="{{$row->id}}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
+                                                </div>
                                             </div>
                                         </div>
                                         <ul class="trends_marks">
@@ -817,7 +786,7 @@
                         <div class="newsletter_title_container">
                             <div class="newsletter_icon"><img src="{{asset('public/frontend/images/send.png')}}" alt=""></div>
                             <div class="newsletter_title">Sign up for Newsletter</div>
-                            <div class="newsletter_text"><p>...and receive %20 coupon for first shopping.</p></div>
+                            <div class="newsletter_text"><p>Weekly 10%, 20% Coupons</p></div>
                         </div>
                         <div class="newsletter_content clearfix">
                             <form action="{{route('store.newsletter')}}" method="post" class="newsletter_form">

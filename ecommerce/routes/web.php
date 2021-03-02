@@ -69,13 +69,8 @@ Route::get('delete/sub/{id}', 'Admin\Category\CouponController@deleteSub');
 
 //All Product Routes:
 Route::get('admin/product/all', 'Admin\ProductController@index')->name('all.product');
-Route::get('admin/raffle/all', 'Admin\RaffleController@index')->name('all.product.raffle');
-Route::get('view/raffle/entries/{id}', 'Admin\RaffleController@viewRaffle');
 Route::get('admin/product/add', 'Admin\ProductController@createProduct')->name('add.product');
 Route::post('admin/store/product', 'Admin\ProductController@storeProduct')->name('store.product');
-Route::get('accept/raffle/{id}', 'Admin\RaffleController@acceptRaffle');
-Route::get('reject/raffle/{id}', 'Admin\RaffleController@deleteRaffle');
-Route::get('acceptRandom/raffle', 'Admin\RaffleController@randomRaffle')->name('random.raffle');
 
 
 Route::get('inactive/product/{id}', 'Admin\ProductController@inactive');
@@ -127,8 +122,6 @@ Route::get('admin/delivery/process/{id}', 'Admin\OrderController@deliveryProcess
 Route::get('admin/delivery/done/{id}', 'Admin\OrderController@deliveryDone');
 
 
-//Admin Raffle Route
-Route::get('admin/raffles', 'Admin\OrderController@processPayment')->name('admin.process.payment');
 
 
 // SEO Setting Route
@@ -180,7 +173,8 @@ Route::get('products/{id}', 'ProductController@subcategoryView');
 Route::get('all_category/{id}', 'ProductController@categoryView');
 Route::get('subcategories/{id}', 'ProductController@subcategoryView');
 Route::post('user/stripe/charge/', 'PaymentController@stripeCharge')->name('stripe.charge');
-Route::post('user/stripe/charge/', 'PaymentController@raffles')->name('raffle.process');
+//Route::post('user/stripe/charge/', 'PaymentController@raffles')->name('raffle.process');
+
 
 // Order Tracking Route
 Route::post('order/tracking', 'FrontController@orderTraking')->name('order.tracking');
@@ -245,3 +239,11 @@ Route::post('product/search', 'ProductController@productSearch')->name('product.
 
 Route::get('auth/redirect/{provider}', 'SocialController@redirect');
 Route::get('/callback/{provider}', 'SocialController@callback');
+
+//Raffle
+Route::get('accept/raffle/{id}', 'Admin\RaffleController@acceptRaffle');
+Route::get('reject/raffle/{id}', 'Admin\RaffleController@deleteRaffle');
+Route::get('acceptRandom/raffle', 'Admin\RaffleController@randomRaffle')->name('random.raffle');
+//Admin Raffle Route
+Route::get('admin/raffles', 'Admin\OrderController@processPayment')->name('admin.process.payment');
+Route::get('admin/raffle/all', 'Admin\RaffleController@index')->name('all.product.raffle');

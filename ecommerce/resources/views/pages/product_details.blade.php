@@ -72,8 +72,14 @@
                                     <div class="col-lg-4">
                                         {{--Drop down menu for Quantity options--}}
                                         <div class="form-group">
-                                            <label for="exampleFormControlSelect1">Quantity</label>
-                                        <input class="form-control" type="number" value="1" pattern="[0-9]" name="qty">
+                                            @if($product->category_id == 13)
+                                                <label for="exampleFormControlSelect1">Quantity</label>
+                                                <input class="form-control" type="number" value="1" pattern="[0-9]" name="qty" min="0" max="1">
+                                            @else
+                                                <label for="exampleFormControlSelect1">Quantity</label>
+                                                <input class="form-control" type="number" value="1" pattern="[0-9]" name="qty" min="0">
+                                            @endif
+
                                         </div>
                                     </div>
                                 </div>

@@ -120,11 +120,8 @@
                                 <li class="list-group-item">Subtotal : <span style="float: right;">
                              	£{{  Cart::Subtotal() }} </span> </li>
                             @endif
-
-
-
                             <li class="list-group-item">Shipping Charge : <span style="float: right;">£{{ $charge  }} </span> </li>
-                            <li class="list-group-item">20% Vat : <span style="float: right;">£{{ Cart::Subtotal() * $vat }} </span> </li>
+                            <li class="list-group-item">20% Vat : <span style="float: right;">£{{ Round(Cart::Subtotal() * $vat,2) }} </span></li>
                             @if(Session::has('coupon'))
                          <li class="list-group-item">Total : <span style="float: right;">£{{ Session::get('coupon')['balance'] + $charge  }} </span> </li>
                             @else
