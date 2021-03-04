@@ -20,11 +20,12 @@
 
     <link rel="stylesheet" href="sweetalert2.min.css">
     <script src="https://js.stripe.com/v3/"></script>
-
+    @include('facebook-pixel::head')
 
 </head>
 
 <body>
+@include('facebook-pixel::body')
 
 
 <div class="super_container">
