@@ -126,75 +126,75 @@ class PaymentController extends Controller
 
     }
 
-//    public function raffles(Request $request){
-//
-//        $email = Auth::user()->email;
-//        $total = $request->total;
-//        // Set your secret key: remember to change this to your live secret key in production
-//        // See your keys here: https://dashboard.stripe.com/account/apikeys
-//        \Stripe\Stripe::setApiKey('sk_test_51HsrhgD6XdWLRroOhbuDc4335Gqg7blxqlilVSNVmbWthCZOVWzusXoRV0dTVhXFSCslOCiNAvXCOkIhJELvVhsj00yd8dhq8d');
-//
-//        // Token is created using Checkout or Elements!
-//        // Get the payment token ID submitted by the form:
-//        $token = $_POST['stripeToken'];
-//
-//        $charge = \Stripe\Charge::create([
-//            'amount' => $total*100,
-//            'currency' => 'GBP',
-//            'description' => 'MASHOP Purchase',
-//            'source' => $token,
-//            'metadata' => ['order_id' => uniqid()],
-//        ]);
-//
-//        $data = array();
-//        $data['user_id'] = Auth::id();
-//        $data['payment_id'] = $charge->payment_method;
-//        $data['paying_amount'] = $charge->amount;
-//        //$data['stripe_order_id'] = $charge->metadata->order_id;
-//        $data['shipping'] = $request->shipping;
-//
-//
-//
-//        // Mail send to user for Invoice
-//        //Mail::to($email)->send(new InvoiceMail($data));
-//
-//
-//
-//
-//        // Insert Order Details Table
-//
-//        $content = Cart::content();
-//        $details = array();
-//        foreach ($content as $row) {
-//            $data['product_id'] = $row->id;
-//
-//        }
-//        $raffle_id = DB::table('raffles')->insertGetId($data);
-//
-//        // Insert Shipping Table
-//
-//        $shipping = array();
-//        $shipping['order_id'] = $raffle_id;
-//        $shipping['ship_name'] = $request->ship_name;
-//        $shipping['ship_phone'] = $request->ship_phone;
-//        $shipping['ship_email'] = $request->ship_email;
-//        $shipping['ship_address'] = $request->ship_address;
-//        $shipping['ship_city'] = $request->ship_city;
-//        $shipping['ship_postcode'] = $request->ship_postcode;
-//        $shipping['ship_country'] = $request->ship_country;
-//        DB::table('shipping')->insert($shipping);
-//
-//        Cart::destroy();
-//        if (Session::has('coupon')) {
-//            Session::forget('coupon');
-//        }
-//        $notification=array(
-//            'messege'=>'Order Successful',
-//            'alert-type'=>'success'
-//        );
-//        return Redirect()->to('/')->with($notification);
-//
-//    }
+    public function raffles(Request $request){
+
+        $email = Auth::user()->email;
+        $total = $request->total;
+        // Set your secret key: remember to change this to your live secret key in production
+        // See your keys here: https://dashboard.stripe.com/account/apikeys
+        \Stripe\Stripe::setApiKey('sk_test_51HsrhgD6XdWLRroOhbuDc4335Gqg7blxqlilVSNVmbWthCZOVWzusXoRV0dTVhXFSCslOCiNAvXCOkIhJELvVhsj00yd8dhq8d');
+
+        // Token is created using Checkout or Elements!
+        // Get the payment token ID submitted by the form:
+        $token = $_POST['stripeToken'];
+
+        $charge = \Stripe\Charge::create([
+            'amount' => $total*100,
+            'currency' => 'GBP',
+            'description' => 'MASHOP Purchase',
+            'source' => $token,
+            'metadata' => ['order_id' => uniqid()],
+        ]);
+
+        $data = array();
+        $data['user_id'] = Auth::id();
+        $data['payment_id'] = $charge->payment_method;
+        $data['paying_amount'] = $charge->amount;
+        //$data['stripe_order_id'] = $charge->metadata->order_id;
+        $data['shipping'] = $request->shipping;
+
+
+
+        // Mail send to user for Invoice
+        //Mail::to($email)->send(new InvoiceMail($data));
+
+
+
+
+        // Insert Order Details Table
+
+        $content = Cart::content();
+        $details = array();
+        foreach ($content as $row) {
+            $data['product_id'] = $row->id;
+
+        }
+        $raffle_id = DB::table('raffles')->insertGetId($data);
+
+        // Insert Shipping Table
+
+        $shipping = array();
+        $shipping['order_id'] = $raffle_id;
+        $shipping['ship_name'] = $request->ship_name;
+        $shipping['ship_phone'] = $request->ship_phone;
+        $shipping['ship_email'] = $request->ship_email;
+        $shipping['ship_address'] = $request->ship_address;
+        $shipping['ship_city'] = $request->ship_city;
+        $shipping['ship_postcode'] = $request->ship_postcode;
+        $shipping['ship_country'] = $request->ship_country;
+        DB::table('shipping')->insert($shipping);
+
+        Cart::destroy();
+        if (Session::has('coupon')) {
+            Session::forget('coupon');
+        }
+        $notification=array(
+            'messege'=>'Order Successful',
+            'alert-type'=>'success'
+        );
+        return Redirect()->to('/')->with($notification);
+
+    }
 
 
 }

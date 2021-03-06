@@ -308,9 +308,9 @@
                                                         <div class="product_content">
 
                                                             @if($row->discount_price == NULL)
-                                                                <div class="product_price discount" style="color: black">£{{ $row->selling_price }}<span> </div>
+                                                                <div class="product_price discount" style="color: black">£{{ $row->selling_price }}</div>
                                                             @else
-                                                                <div class="product_price discount" style="color: red">£{{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
+                                                                <div class="product_price discount" style="color: red">£{{ $row->discount_price }}<span>£{{ $row->selling_price }}</span></div>
                                                             @endif
 
 
@@ -394,9 +394,9 @@
                                                         <div class="product_content">
 
                                                             @if($row->discount_price == NULL)
-                                                                <div class="product_price discount" style="color: black">£{{ $row->selling_price }}<span> </div>
+                                                                <div class="product_price discount" style="color: black">£{{ $row->selling_price }}</div>
                                                             @else
-                                                                <div class="product_price discount" style="color: red">£{{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
+                                                                <div class="product_price discount" style="color: red">£{{ $row->discount_price }}<span>£{{ $row->selling_price }}</span></div>
                                                             @endif
 
 
@@ -476,9 +476,9 @@
                                                         <div class="product_content">
 
                                                             @if($row->discount_price == NULL)
-                                                                <div class="product_price discount" style="color: black">£{{ $row->selling_price }}<span> </div>
+                                                                <div class="product_price discount" style="color: black">£{{ $row->selling_price }}</div>
                                                             @else
-                                                                <div class="product_price discount" style="color: red">£{{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
+                                                                <div class="product_price discount" style="color: red">£{{ $row->discount_price }}<span>£{{ $row->selling_price }}</span></div>
                                                             @endif
 
 
@@ -558,9 +558,9 @@
                                                         <div class="product_content">
 
                                                             @if($row->discount_price == NULL)
-                                                                <div class="product_price discount" style="color: black">£{{ $row->selling_price }}<span> </div>
+                                                                <div class="product_price discount" style="color: black">£{{ $row->selling_price }}</div>
                                                             @else
-                                                                <div class="product_price discount" style="color: red">£{{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
+                                                                <div class="product_price discount" style="color: red">£{{ $row->discount_price }}<span>£{{ $row->selling_price }}</span></div>
                                                             @endif
 
 
@@ -643,7 +643,7 @@
                                                             @if($row->discount_price == NULL)
                                                                 <div class="product_price discount" style="color: red">£{{ $row->selling_price }}<span> </div>
                                                             @else
-                                                                <div class="product_price discount" style="color: black">£{{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
+                                                                <div class="product_price discount" style="color: black">£{{ $row->discount_price }}<span>£{{ $row->selling_price }}</span></div>
                                                             @endif
 
 

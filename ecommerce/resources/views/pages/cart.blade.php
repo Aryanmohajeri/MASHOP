@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/styles/cart_styles.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/styles/cart_responsive.css') }}">
 
+
     <!-- Cart -->
     <div class="cart_section">
         <div class="container">
@@ -51,7 +52,7 @@
                                         <div class="cart_item_quantity cart_info_col">
                                             <div class="cart_item_title">Quantity</div><br>
 
-                                            @if($row->options->category_id == 13)
+                                            @if($row->options->raffle == 1)
                                                 <br>
                                                 <p> Limited To One</p>
                                             @else
