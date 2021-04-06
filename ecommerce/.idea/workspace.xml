@@ -178,6 +178,7 @@
       <path value="$PROJECT_DIR$/vendor/php-parallel-lint/php-console-color" />
       <path value="$PROJECT_DIR$/vendor/php-parallel-lint/php-console-highlighter" />
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/paypal/rest-api-sdk-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kenFne0OYrq5SyRiW5Az7l3AnZ" />
@@ -260,6 +261,7 @@
       <workItem from="1614454738427" duration="3000" />
       <workItem from="1614884359570" duration="43000" />
       <workItem from="1615052568248" duration="5259000" />
+      <workItem from="1617741437212" duration="463000" />
     </task>
     <servers />
   </component>
@@ -284,5 +286,11 @@
       <path value="$PROJECT_DIR$/.." />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="600" height="428" key="javadoc.popup" timestamp="1616940884693">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.25.1280.727@0.25.1280.727" timestamp="1616940884693" />
   </component>
 </project>

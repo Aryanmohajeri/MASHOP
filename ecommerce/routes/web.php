@@ -7,7 +7,9 @@ Route::get('/', function () {return view('pages.index');});
 Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/password/change', 'HomeController@changePassword')->name('password.change');
+Route::get('/email/change', 'HomeController@emailPassword')->name('email.change');
 Route::post('/password/update', 'HomeController@updatePassword')->name('password.update');
+Route::post('/email/update', 'HomeController@updateEmail')->name('email.update');
 Route::get('/user/logout', 'HomeController@Logout')->name('user.logout');
 
 //admin=======
@@ -172,8 +174,8 @@ Route::post('user/payment/process/', 'PaymentController@paymentProcess')->name('
 Route::get('products/{id}', 'ProductController@subcategoryView');
 Route::get('all_category/{id}', 'ProductController@categoryView');
 Route::get('subcategories/{id}', 'ProductController@subcategoryView');
-Route::post('user/stripe/charge/', 'PaymentController@stripeCharge')->name('stripe.charge');
-Route::post('user/stripe/charge/', 'PaymentController@raffles')->name('raffle.process');
+Route::post('user/raffle/charge/', 'PaymentController@raffles')->name('raffle.process');
+Route::post('user/stripe/charge/', 'PaymentController@stripeCharge')->name('stripe.payment');
 
 
 // Order Tracking Route

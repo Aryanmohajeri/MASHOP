@@ -172,7 +172,7 @@ $cart = Cart::Content();
             @if( $row->options->raffle == 1)
                <form action="{{ route('raffle.process') }}" method="post" id="payment-form">
             @else
-                <form action="{{ route('stripe.charge') }}" method="post" id="payment-form">
+                <form action="{{ route('stripe.payment') }}" method="post" id="payment-form">
              @endif
               @csrf
               <div class="form-row">

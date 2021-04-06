@@ -737,17 +737,17 @@
                             <!-- Trends Slider Item -->
                                 <div class="owl-item">
                                     <div class="trends_item is_new">
-                                        <div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="{{ asset( $row->image_one )}}" alt=""></div>
+                                        <div class="trends_image d-flex flex-column align-items-center justify-content-center">     <a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}"><img src="{{ asset( $row->image_one )}}" alt=""></div>
                                         <div class="trends_content">
-                                            <div class="trends_category"><a href="#">{{ $row->brand_name }}</a></div>
+                                            <div class="trends_category"><a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}">{{ $row->product_name }}</a></div>
                                             <div class="trends_info clearfix">
-                                                <div class="trends_name"><a href="product.html">{{ $row->product_name }}</a></div>
+                                                <div class="trends_name">     <a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}"> </a></div>
 
 
                                                 @if($row->discount_price == NULL)
-                                                    <div class="product_price discount">${{ $row->selling_price }}<span> </div>
+                                                    <div class="product_price discount">£{{ $row->selling_price }}<span> </div>
                                                 @else
-                                                    <div class="product_price discount">${{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
+                                                    <div class="product_price discount">£{{ $row->discount_price }}<span>£{{ $row->selling_price }}</span></div>
                                                 @endif
 
                                                 <div class="product_extras">

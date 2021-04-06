@@ -67,8 +67,8 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"> <a href="{{ route('password.change') }}">Change Password</a>  </li>
-                            <li class="list-group-item">Edit Profile</li>
-{{--                            <li class="list-group-item"><a href="{{ route('success.orderlist') }}"> Return Order</a> </li>--}}
+                            <li class="list-group-item"> <a href="{{ route('email.change') }}"> Change Email </a</li>
+                            <li class="list-group-item"><a href="{{ route('success.orderlist') }}"> Return Order</a> </li>
                         </ul>
 
                         <div class="card-body">

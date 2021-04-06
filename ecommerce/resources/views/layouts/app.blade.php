@@ -202,23 +202,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-2 offset-lg-2">
-                        <div class="footer_column">
-                            <div class="footer_title">Find it Fast</div>
-                            <ul class="footer_list">
-                                <li><a href="#">Computers & Laptops</a></li>
-                                <li><a href="#">Cameras & Photos</a></li>
-                                <li><a href="#">Hardware</a></li>
-                                <li><a href="#">Smartphones & Tablets</a></li>
-                                <li><a href="#">TV & Audio</a></li>
-                            </ul>
-                            <div class="footer_subtitle">Gadgets</div>
-                            <ul class="footer_list">
-                                <li><a href="#">Car Electronics</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    
 
 
 
@@ -230,8 +214,6 @@
                                 <li><a href="" data-toggle="modal" data-target="#trackOrder">My Order Tracking</a></li>
                                 <li><a href="{{route('user.wishlist')}}">Wish list</a></li>
                                 <li><a href="{{ route('contact.page') }}">Customer Service</a></li>
-                                <li><a href="#">Returns / Exchange</a></li>
-                                <li><a href="#">FAQs</a></li>
                                 <li><a href="{{ route('blog.post') }}">Blogs</a></li>
                             </ul>
                         </div>
