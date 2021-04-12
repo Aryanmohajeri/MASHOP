@@ -47,7 +47,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
@@ -132,7 +132,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/vendor/symfony/mime" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
@@ -179,6 +178,12 @@
       <path value="$PROJECT_DIR$/vendor/php-parallel-lint/php-console-highlighter" />
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
       <path value="$PROJECT_DIR$/vendor/paypal/rest-api-sdk-php" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kenFne0OYrq5SyRiW5Az7l3AnZ" />
@@ -195,7 +200,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/mail" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Feature" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -203,27 +208,51 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/mail" />
-      <recent name="$PROJECT_DIR$/resources/views/admin/raffle" />
-      <recent name="C:\MAMP\htdocs\MASHOP\ecommerce\resources\views" />
-      <recent name="C:\MAMP\htdocs\MASHOP\ecommerce\app\Mail" />
-      <recent name="C:\xampp\htdocs\MASHOP\ecommerce\resources\views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
       <recent name="C:\MAMP\htdocs\ecommerce\resources\views\pages" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Feature" />
+      <recent name="$PROJECT_DIR$/resources/views/mail" />
+      <recent name="$PROJECT_DIR$/resources/views/admin/raffle" />
+      <recent name="C:\MAMP\htdocs\MASHOP\ecommerce\resources\views" />
+      <recent name="C:\MAMP\htdocs\MASHOP\ecommerce\app\Mail" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+    <configuration name="AdminTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AdminTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AdminTest.php" scope="Class" />
       <method v="2" />
     </configuration>
+    <configuration name="ExampleTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/UserTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ExampleTest.testBasicTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/UserTest.php" method="testBasicTest" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UserTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UserTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/UserTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.ExampleTest" />
+        <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
+        <item itemvalue="PHPUnit.UserTest" />
+        <item itemvalue="PHPUnit.AdminTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -262,6 +291,7 @@
       <workItem from="1614884359570" duration="43000" />
       <workItem from="1615052568248" duration="5259000" />
       <workItem from="1617741437212" duration="463000" />
+      <workItem from="1618225543582" duration="3689000" />
     </task>
     <servers />
   </component>
@@ -288,6 +318,58 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="228" y="47" key="#CLI_Interpreters" timestamp="1618225097850">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state x="228" y="47" key="#CLI_Interpreters/0.25.1280.727@0.25.1280.727" timestamp="1618225097850" />
+    <state x="314" y="35" key="#PHP" timestamp="1618224632374">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state x="314" y="35" key="#PHP/0.25.1280.727@0.25.1280.727" timestamp="1618224632374" />
+    <state x="409" y="53" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618225842762">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state x="409" y="53" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1280.727@0.25.1280.727" timestamp="1618225842762" />
+    <state width="1238" height="223" key="GridCell.Tab.0.bottom" timestamp="1618225728838">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state width="1238" height="223" key="GridCell.Tab.0.bottom/0.25.1280.727@0.25.1280.727" timestamp="1618225728838" />
+    <state width="1238" height="223" key="GridCell.Tab.0.center" timestamp="1618225728837">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state width="1238" height="223" key="GridCell.Tab.0.center/0.25.1280.727@0.25.1280.727" timestamp="1618225728837" />
+    <state width="1238" height="223" key="GridCell.Tab.0.left" timestamp="1618225728837">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state width="1238" height="223" key="GridCell.Tab.0.left/0.25.1280.727@0.25.1280.727" timestamp="1618225728837" />
+    <state width="1238" height="223" key="GridCell.Tab.0.right" timestamp="1618225728838">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state width="1238" height="223" key="GridCell.Tab.0.right/0.25.1280.727@0.25.1280.727" timestamp="1618225728838" />
+    <state width="1238" height="223" key="GridCell.Tab.1.bottom" timestamp="1618225726664">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state width="1238" height="223" key="GridCell.Tab.1.bottom/0.25.1280.727@0.25.1280.727" timestamp="1618225726664" />
+    <state width="1238" height="223" key="GridCell.Tab.1.center" timestamp="1618225726663">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state width="1238" height="223" key="GridCell.Tab.1.center/0.25.1280.727@0.25.1280.727" timestamp="1618225726663" />
+    <state width="1238" height="223" key="GridCell.Tab.1.left" timestamp="1618225726662">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state width="1238" height="223" key="GridCell.Tab.1.left/0.25.1280.727@0.25.1280.727" timestamp="1618225726662" />
+    <state width="1238" height="223" key="GridCell.Tab.1.right" timestamp="1618225726663">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state width="1238" height="223" key="GridCell.Tab.1.right/0.25.1280.727@0.25.1280.727" timestamp="1618225726663" />
+    <state x="149" y="25" width="982" height="727" key="SettingsEditor" timestamp="1618225098179">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state x="149" y="25" width="982" height="727" key="SettingsEditor/0.25.1280.727@0.25.1280.727" timestamp="1618225098179" />
+    <state x="0" y="25" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1618225607328">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state x="0" y="25" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.25.1280.727@0.25.1280.727" timestamp="1618225607328" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1616940884693">
       <screen x="0" y="25" width="1280" height="727" />
     </state>
