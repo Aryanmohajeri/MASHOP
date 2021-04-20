@@ -1,4 +1,3 @@
-<!-- Banner -->
 
 @php
     $slider = DB::table('products')
@@ -7,12 +6,12 @@
                        ->where('main_slider',1)->orderBy('id','DESC')->first();
 
 @endphp
+<br><br><br><br><br><br><br><br><br><br><br>
 <div class="banner">
-    <div class="banner_background" style="background-image:url({{ asset('public/frontend/images/banner_background.jpg')}})"></div>
     <div class="container fill_height">
         <div class="row fill_height">
-            <div class="banner_product_image"><img src="{{ asset( $slider->image_one  )}}" alt="" style="height: 450px;" ></div>
-            <div class="col-lg-5 offset-lg-4 fill_height">
+            <div class="banner_product_image"><img src="{{ asset( $slider->image_one  )}}" alt="" style="height: 400px; margin-right: 200px" ></div>
+            <div class="col-lg-5 fill_height">
                 <div class="banner_content">
                     <h2 class="banner_text">{{ $slider->product_name }}</h2>
                     <div class="banner_price">
@@ -30,3 +29,4 @@
         </div>
     </div>
 </div>
+

@@ -159,6 +159,8 @@ section
 {
 	clear: both;
 }
+
+
 .clearfix::before, .clearfix::after
 {
 	content: "";
@@ -1411,6 +1413,7 @@ select option
 {
 	font-weight: 700;
 }
+
 .available_bar
 {
 	width: 100%;

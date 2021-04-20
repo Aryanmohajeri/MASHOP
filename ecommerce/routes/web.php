@@ -234,8 +234,7 @@ Route::post('contact/form', 'ContactController@contactForm')->name('contact.form
 Route::get('admin/all/message', 'ContactController@allMessage')->name('all.message');
 
 // Search Route
-Route::post('product/search', 'ProductController@productSearch')->name('product.search');
-
+Route::post('product/search', 'SearchController@productSearch')->name('product.search');
 
 //google
 

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Model\Admin\Subcategory;
+use Request;
 use Illuminate\Support\Facades\DB;
 use Cart;
+
 class ProductController extends Controller
 {
     public function productView($id,$product_name){
@@ -108,13 +110,12 @@ class ProductController extends Controller
     public function categoryView($id){
         $catname = DB::table('categories')->where('id',$id)->get();
 
-        $category_all =  DB::table('products')->where('category_id',$id)->paginate(10);
-        return view('pages.all_category',compact('category_all','catname'));
+        $category_all =  DB::table('products')->where('category_id',$id)->orderBy('product_name')->paginate(50);
+        return view('pages.all_category',compact('category_all','catname','id'));
 
     }
 
     public function subcategoryView($id){
-        $products = DB::table('products')->where('subcategory_id',$id)->paginate(10);
 
         $categories = DB::table('categories')->get();
 
@@ -122,20 +123,20 @@ class ProductController extends Controller
 
         $subcatname = DB::table('subcategories')->where('id',$id)->get();
 
-        return view('pages.all_products',compact('products','categories','brands','subcatname'));
-    }
+        if(Request::get('sort') == 'price_asc'){
+            $products = DB::table('products')->where('subcategory_id',$id)->orderBy('selling_price', 'asc')->orderBy('discount_price','asc')->paginate(50);
+        }elseif (Request::get('sort')== 'price_desc'){
+            $products = DB::table('products')->where('subcategory_id',$id)->orderBy('selling_price','desc')->orderBy('discount_price','desc')->paginate(50);
 
-    public function productSearch(Request $request){
-        $item = $request->search;
-        // echo "$item";
+        }else{
+            $products = DB::table('products')->where('subcategory_id',$id)->orderBy('product_name')->paginate(50);
+        }
 
-        $products = DB::table('products')
-            ->where('product_name','LIKE',"%$item%")
-            ->paginate(20);
-
-        return view('pages.search',compact('products'));
+        return view('pages.all_products',compact('products','categories','id','brands','subcatname'));
 
 
     }
+
+
 }
 
