@@ -215,16 +215,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
-      <recent name="C:\MAMP\htdocs\ecommerce\resources\views\pages" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/Feature" />
       <recent name="$PROJECT_DIR$/resources/views/mail" />
       <recent name="$PROJECT_DIR$/resources/views/admin/raffle" />
       <recent name="C:\MAMP\htdocs\MASHOP\ecommerce\resources\views" />
       <recent name="C:\MAMP\htdocs\MASHOP\ecommerce\app\Mail" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
+      <recent name="C:\MAMP\htdocs\ecommerce\resources\views\pages" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
@@ -295,7 +295,9 @@
       <workItem from="1615052568248" duration="5259000" />
       <workItem from="1617741437212" duration="463000" />
       <workItem from="1618225543582" duration="3689000" />
-      <workItem from="1618927908766" duration="8012000" />
+      <workItem from="1618927908766" duration="8101000" />
+      <workItem from="1619042834679" duration="297000" />
+      <workItem from="1619046060384" duration="1536000" />
     </task>
     <servers />
   </component>
