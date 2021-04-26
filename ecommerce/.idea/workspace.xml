@@ -211,20 +211,23 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/admin/News Letter" />
+      <recent name="$PROJECT_DIR$/resources/views/admin/setting" />
+      <recent name="$PROJECT_DIR$/resources/views/admin/contacts" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
+      <recent name="C:\MAMP\htdocs\ecommerce\resources\views\pages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/Feature" />
       <recent name="$PROJECT_DIR$/resources/views/mail" />
       <recent name="$PROJECT_DIR$/resources/views/admin/raffle" />
       <recent name="C:\MAMP\htdocs\MASHOP\ecommerce\resources\views" />
       <recent name="C:\MAMP\htdocs\MASHOP\ecommerce\app\Mail" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
-      <recent name="C:\MAMP\htdocs\ecommerce\resources\views\pages" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
@@ -299,7 +302,9 @@
       <workItem from="1619042834679" duration="297000" />
       <workItem from="1619046060384" duration="1598000" />
       <workItem from="1619194176887" duration="352000" />
-      <workItem from="1619352085209" duration="707000" />
+      <workItem from="1619352085209" duration="859000" />
+      <workItem from="1619430749378" duration="20902000" />
+      <workItem from="1619462822724" duration="1336000" />
     </task>
     <servers />
   </component>
@@ -338,10 +343,10 @@
       <screen x="0" y="25" width="1280" height="727" />
     </state>
     <state x="409" y="53" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1280.727@0.25.1280.727" timestamp="1618225842762" />
-    <state x="378" y="147" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1618936157522">
+    <state x="378" y="147" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619449728356">
       <screen x="0" y="25" width="1280" height="727" />
     </state>
-    <state x="378" y="147" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1280.727@0.25.1280.727" timestamp="1618936157522" />
+    <state x="378" y="147" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1280.727@0.25.1280.727" timestamp="1619449728356" />
     <state width="1238" height="223" key="GridCell.Tab.0.bottom" timestamp="1618225728838">
       <screen x="0" y="25" width="1280" height="727" />
     </state>
@@ -374,10 +379,14 @@
       <screen x="0" y="25" width="1280" height="727" />
     </state>
     <state width="1238" height="223" key="GridCell.Tab.1.right/0.25.1280.727@0.25.1280.727" timestamp="1618225726663" />
-    <state x="149" y="25" width="982" height="727" key="SettingsEditor" timestamp="1618225098179">
+    <state x="181" y="197" key="Registry" timestamp="1619442269514">
       <screen x="0" y="25" width="1280" height="727" />
     </state>
-    <state x="149" y="25" width="982" height="727" key="SettingsEditor/0.25.1280.727@0.25.1280.727" timestamp="1618225098179" />
+    <state x="181" y="197" key="Registry/0.25.1280.727@0.25.1280.727" timestamp="1619442269514" />
+    <state x="149" y="25" width="982" height="727" key="SettingsEditor" timestamp="1619439930409">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state x="149" y="25" width="982" height="727" key="SettingsEditor/0.25.1280.727@0.25.1280.727" timestamp="1619439930409" />
     <state x="0" y="25" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1618225607328">
       <screen x="0" y="25" width="1280" height="727" />
     </state>
@@ -386,9 +395,14 @@
       <screen x="0" y="25" width="1280" height="727" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.25.1280.727@0.25.1280.727" timestamp="1616940884693" />
-    <state x="0" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1618931895143">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="305" y="173" key="run.anything.popup" timestamp="1619445418501">
+      <screen x="0" y="25" width="1280" height="727" />
+    </state>
+    <state x="305" y="173" key="run.anything.popup/0.25.1280.727@0.25.1280.727" timestamp="1619445418501" />
+    <state x="0" y="138" width="670" height="615" key="search.everywhere.popup" timestamp="1619444139673">
+      <screen x="0" y="25" width="1280" height="727" />
     </state>
     <state x="0" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1618931895143" />
+    <state x="0" y="138" width="670" height="615" key="search.everywhere.popup/0.25.1280.727@0.25.1280.727" timestamp="1619444139673" />
   </component>
 </project>

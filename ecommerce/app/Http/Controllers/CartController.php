@@ -184,16 +184,7 @@ class CartController extends Controller
         }
     }
 
-    public function productWishlist(){
-        $userid = Auth::id();
-        $product = DB::table('wishlists')
-            ->join('products','wishlists.product_id','products.id')
-            ->select('products.*','wishlists.user_id')
-            ->where('wishlists.user_id',$userid)
-            ->get();
-        // return response()->json($product);
-        return view('pages.wishlist',compact('product'));
-    }
+
 
     public function Coupon(Request $request){
         $coupon = $request->coupon;

@@ -13,7 +13,8 @@
 
             <div class="card pd-20 pd-sm-40">
                 <h6 class="card-body-title">Coupon List
-                    <a href="#" class="btn btn-sm btn-warning" style="float: right;" data-toggle="modal" data-target="#modaldemo3">Add New</a>
+                    <a href="#" class="btn btn-sm btn-warning" style="float: right;" data-toggle="modal"
+                       data-target="#modaldemo3">Add New</a>
                 </h6>
 
 
@@ -35,8 +36,10 @@
                                 <td>{{ $row->coupon }}</td>
                                 <td>{{ $row->discount }}%</td>
                                 <td>
-                                    <a href="{{ URL::to('edit/coupon/'.$row->id) }} " class="btn btn-sm btn-info">Edit</a>
-                                    <a href="{{ URL::to('delete/coupon/'.$row->id) }}" class="btn btn-sm btn-danger" id="delete">Delete</a>
+                                    <a href="{{ URL::to('edit/coupon/'.$row->id) }} "
+                                       class="btn btn-sm btn-info">Edit</a>
+                                    <a href="{{ URL::to('delete/coupon/'.$row->id) }}" class="btn btn-sm btn-danger"
+                                       id="delete">Delete</a>
                                 </td>
 
                             </tr>
@@ -48,10 +51,7 @@
             </div><!-- card -->
 
 
-
-
         </div><!-- sl-mainpanel -->
-
 
 
         <!-- LARGE MODAL -->
@@ -79,13 +79,15 @@
                         <div class="modal-body pd-20">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Coupon Code </label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Coupon Code" name="coupon">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp" placeholder="Coupon Code" name="coupon">
 
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Coupon Discount (%) </label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Coupon Discount" name="discount">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp" placeholder="Coupon Discount" name="discount">
 
                             </div>
 

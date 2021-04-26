@@ -16,47 +16,13 @@
                         </div>
                     </div>
 
-                    <!-- Shop -->
+                <div class="shop">
+                    <div class="container">
+                        <div class="row">
 
-                    <div class="shop">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-3">
+                            <div class="col-lg-12">
 
-                                    <!-- Shop Sidebar -->
-                                    <div class="shop_sidebar">
-                                        <div class="sidebar_section">
-                                            <div class="sidebar_title">Categories</div>
-                                            <ul class="sidebar_categories">
-                                                @php
-                                                    $category =  DB::table('categories')->get();
-                                                @endphp
-                                                @foreach($category as $cat)
-                                                <li><a href="#">{{ $cat->category_name }}</a></li>
-                                                @endforeach
-
-                                            </ul>
-                                        </div>
-
-                                        <div class="sidebar_section">
-                                            <div class="sidebar_subtitle brands_subtitle">Brands</div>
-                                            <ul class="brands_list">
-                                                @foreach($brands as $row)
-                                                @php
-                                                $brand = DB::table('brands')->where('id',$row->brand_id)->first();
-                                                @endphp
-                                                <li class="brand"><a href="#">{{ $brand->brand_name }}</a></li>
-                                                @endforeach
-
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-lg-9">
-
-                                    <!-- Shop Content -->
+                            <!-- Shop Content -->
 
                                     <div class="shop_content">
                                         <div class="shop_bar clearfix">
@@ -97,10 +63,9 @@
 
                  <div class="product_name"><div><a href="{{ url('product/details/'.$pro->id.'/'.$pro->product_name) }}" tabindex="0">{{ $pro->product_name  }} </a></div></div>
                                                 </div>
-                                                <div class="product_fav"><i class="fas fa-heart"></i></div>
 
 
-                                                 <ul class="product_marks">
+                                                    <ul class="product_marks">
                                             @if($pro->discount_price == NULL)
                                              <li class="product_mark product_new" style="background: blue;">New</li>
                                             @else

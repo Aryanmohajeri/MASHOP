@@ -33,11 +33,13 @@
                         <div class="modal-body pd-20">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Coupon Code</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $coupon->coupon }}" name="coupon">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp" value="{{ $coupon->coupon }}" name="coupon">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Coupon Discount</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $coupon->discount }}" name="discount">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp" value="{{ $coupon->discount }}" name="discount">
                             </div>
 
                         </div><!-- modal-body -->

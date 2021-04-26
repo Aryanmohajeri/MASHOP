@@ -37,16 +37,19 @@
                         <div class="modal-body pd-20">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Category Name English</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $blogcatedit->category_name_en }}" name="category_name_en">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp" value="{{ $blogcatedit->category_name_en }}"
+                                       name="category_name_en">
 
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Category Name Spanish</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $blogcatedit->category_name_es }}" name="category_name_es">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp" value="{{ $blogcatedit->category_name_es }}"
+                                       name="category_name_es">
 
                             </div>
-
 
 
                         </div><!-- modal-body -->
@@ -59,8 +62,6 @@
 
                 </div><!-- table-wrapper -->
             </div><!-- card -->
-
-
 
 
         </div><!-- sl-mainpanel -->

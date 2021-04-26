@@ -47,13 +47,10 @@
 
                     <!-- Main Nav Menu -->
 
-                    <div class="main_nav_menu ml-auto">
+                    <div class="main_nav_menu">
                         <ul class="standard_dropdown main_nav_dropdown">
-                            <li><a href="#">Home<i class="fas fa-chevron-down"></i></a></li>
-                            <li><a href="{{ route('blog.post') }}">Blog<i class="fas fa-chevron-down"></i></a></li>
+                            <li><a href="{{ route('blog.post') }}" style="padding-left: 20px">Blog<i class="fas fa-chevron-down"></i></a></li>
                             <li><a href="{{ route('contact.page') }}">Contact<i class="fas fa-chevron-down contactform"></i></a></li>
-                            <li><a href="{{ route('contact.page') }}">Raffle<i class="fas fa-chevron-down contactform"></i></a></li>
-                            <li><a href="{{ route('contact.page') }}">About Us<i class="fas fa-chevron-down contactform"></i></a></li>
 
                         </ul>
                     </div>

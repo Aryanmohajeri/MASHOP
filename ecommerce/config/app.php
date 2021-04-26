@@ -230,7 +230,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Image' => Intervention\Image\Facades\Image::class,
          'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-        'LaravelFacebookPixel' => WebLAgence\LaravelFacebookPixel\LaravelFacebookPixelFacade::class,
+     'LaravelFacebookPixel' => WebLAgence\LaravelFacebookPixel\LaravelFacebookPixelFacade::class,
 
 
     ],

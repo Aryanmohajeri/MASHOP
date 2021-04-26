@@ -17,7 +17,8 @@
 
             <div class="card pd-20 pd-sm-40">
                 <h6 class="card-body-title">Post List
-                    <a href="{{ route('add.blog.post') }}" class="btn btn-sm btn-warning" style="float: right;"  >Add New Post</a>
+                    <a href="{{ route('add.blog.post') }}" class="btn btn-sm btn-warning" style="float: right;">Add New
+                        Post</a>
                 </h6>
 
 
@@ -27,7 +28,7 @@
                         <tr>
                             <th class="wd-15p">Post Title</th>
                             <th class="wd-15p">Post Category</th>
-                            <th class="wd-15p">Image </th>
+                            <th class="wd-15p">Image</th>
                             <th class="wd-20p">Action</th>
 
                         </tr>
@@ -37,10 +38,11 @@
                             <tr>
                                 <td>{{ $row->post_title_en }}</td>
                                 <td>{{ $row->category_name_en }}</td>
-                                <td> <img src="{{ URL::to($row->post_image) }}" style="height: 50px; width: 50px;"> </td>
+                                <td><img src="{{ URL::to($row->post_image) }}" style="height: 50px; width: 50px;"></td>
                                 <td>
                                     <a href="{{ URL::to('edit/post/'.$row->id) }} " class="btn btn-sm btn-info">Edit</a>
-                                    <a href="{{ URL::to('delete/post/'.$row->id) }}" class="btn btn-sm btn-danger" id="delete">Delete</a>
+                                    <a href="{{ URL::to('delete/post/'.$row->id) }}" class="btn btn-sm btn-danger"
+                                       id="delete">Delete</a>
                                 </td>
 
                             </tr>
@@ -50,8 +52,6 @@
                     </table>
                 </div><!-- table-wrapper -->
             </div><!-- card -->
-
-
 
 
         </div><!-- sl-mainpanel -->

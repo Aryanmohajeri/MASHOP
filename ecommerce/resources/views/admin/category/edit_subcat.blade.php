@@ -33,7 +33,9 @@
                         <div class="modal-body pd-20">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Sub Category Name</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $subcat->subcategory_name }}" name="subcategory_name">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp" value="{{ $subcat->subcategory_name }}"
+                                       name="subcategory_name">
 
                             </div>
                             <div class="form-group">
@@ -43,14 +45,14 @@
 
                                     @foreach($category as $row)
                                         <option value="{{ $row->id }}"
-                                        <?php if ($row->id == $subcat->category_id ) {
-                                            echo "selected"; } ?> >{{ $row->category_name }}  </option>
+                                        <?php if ($row->id == $subcat->category_id) {
+                                            echo "selected";
+                                        } ?> >{{ $row->category_name }}  </option>
                                     @endforeach
                                 </select>
 
 
                             </div>
-
 
 
                         </div><!-- modal-body -->
@@ -63,8 +65,6 @@
 
                 </div><!-- table-wrapper -->
             </div><!-- card -->
-
-
 
 
         </div><!-- sl-mainpanel -->

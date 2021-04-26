@@ -61,19 +61,7 @@
             return Redirect()->route('admin.coupon')->with($notification);
         }
 
-        public function newsLetter(){
-            $sub = DB::table('newsletters')->get();
-            return view('admin.coupon.newsletter',compact('sub'));
-        }
 
-        public function deleteSub($id){
-            DB::table('newsletters')->where('id',$id)->delete();
-            $notification = array(
-                'messege' => 'Subscriber Deleted Successfully',
-                'alert-type' => 'success'
-            );
-            return Redirect()->back()->with($notification);
-        }
 
 
     }

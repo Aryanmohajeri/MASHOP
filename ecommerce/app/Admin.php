@@ -10,18 +10,16 @@ class Admin extends Authenticatable
 {
     use Notifiable;
 
-        protected $guard = 'admin';
+    protected $guard = 'admin';
+    protected $fillable = [
+        'name', 'email', 'password', 'phone'
+    ];
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
 
-        public function sendPasswordResetNotification($token)
-	    {
-	        $this->notify(new AdminPasswordResetNotification($token));
-	    }
-
-        protected $fillable = [
-            'name', 'email', 'password','phone'
-        ];
-
-        protected $hidden = [
-            'password', 'remember_token',
-        ];
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new AdminPasswordResetNotification($token));
+    }
 }

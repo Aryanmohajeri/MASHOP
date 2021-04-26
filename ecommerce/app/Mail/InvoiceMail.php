@@ -11,7 +11,7 @@ class InvoiceMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-     public $data;
+    public $data;
 
 
     public function __construct($data)
@@ -27,7 +27,7 @@ class InvoiceMail extends Mailable
     public function build()
     {
         $info = $this->data;
-        return $this->from('mashoptech@gmail.com')->view('mail.invoice',compact('info'))->subject('Order Complete');
+        return $this->from('mashoptech@gmail.com')->view('mail.invoice', compact('info'))->subject('Order Complete');
     }
 
 

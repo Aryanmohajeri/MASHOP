@@ -35,7 +35,8 @@
                                 <td>{{ \Carbon\Carbon::parse($row->created_at)->diffForHumans() }}</td>
                                 <td>
 
-                                    <a href="{{ URL::to('delete/sub/'.$row->id) }}" class="btn btn-sm btn-danger" id="delete">Delete</a>
+                                    <a href="{{ URL::to('delete/sub/'.$row->id) }}" class="btn btn-sm btn-danger"
+                                       id="delete">Delete</a>
                                 </td>
 
                             </tr>

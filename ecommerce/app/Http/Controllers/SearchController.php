@@ -1,22 +1,23 @@
 <?php
 
-    namespace App\Http\Controllers;
+namespace App\Http\Controllers;
 
-    use Illuminate\Http\Request;
-    use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
-    class SearchController extends Controller
+class SearchController extends Controller
+{
+    public function productSearch(Request $request)
     {
-        public function productSearch(Request $request){
-            $item = $request->search;
-            // echo "$item";
+        $item = $request->search;
+        // echo "$item";
 
-            $products = DB::table('products')
-                ->where('product_name','LIKE',"%$item%")
-                ->paginate(20);
+        $products = DB::table('products')
+            ->where('product_name', 'LIKE', "%$item%")
+            ->paginate(20);
 
-            return view('pages.search',compact('products'));
+        return view('pages.search', compact('products'));
 
 
-        }
     }
+}

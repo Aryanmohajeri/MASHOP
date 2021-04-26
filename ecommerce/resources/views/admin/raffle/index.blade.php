@@ -36,22 +36,22 @@
                             <tr>
                                 <td>{{ $row->product_code }}</td>
                                 <td>{{str_limit($row->product_name, $limit = 15, $end = "...") }}</td>
-                                <td> <img src="{{ URL::to($row->image_one) }}" height="50px;" width="50px;"> </td>
+                                <td><img src="{{ URL::to($row->image_one) }}" height="50px;" width="50px;"></td>
 
                                 <td>{{ $row->category_name }}</td>
                                 <td>{{ $row->brand_name }}</td>
                                 <td>{{ $row->product_quantity }}</td>
                                 <td>
                                     @if($row->status == 1)
-                                <span class="badge badge-success">Active</span>
-                                @else
-                                <span class="badge badge-danger">Inactive</span>
+                                        <span class="badge badge-success">Active</span>
+                                    @else
+                                        <span class="badge badge-danger">Inactive</span>
 
-                                @endif
+                                    @endif
                                 </td>
                                 <td>
-                                    <a href="{{ URL::to('view/raffle/entries/'.$row->id)  }}" class="btn btn-sm btn-warning"  title="Show"><i class="fa fa-eye"></i></a>
-
+                                    <a href="{{ URL::to('view/raffle/entries/'.$row->id)  }}"
+                                       class="btn btn-sm btn-warning" title="Show"><i class="fa fa-eye"></i></a>
                                 </td>
 
                             </tr>
@@ -63,10 +63,7 @@
             </div><!-- card -->
 
 
-
-
         </div><!-- sl-mainpanel -->
-
 
 
         <!-- LARGE MODAL -->
@@ -89,22 +86,23 @@
                             </ul>
                         </div>
                     @endif
-                    <form method="post" action="{{ route('store.brand') }}" enctype="multipart/form-data" >
+                    <form method="post" action="{{ route('store.brand') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="modal-body pd-20">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Brand Name</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Brand" name="brand_name">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp" placeholder="Brand" name="brand_name">
 
                             </div>
 
 
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Brand Logo</label>
-                                <input type="file" class="form-control" aria-describedby="emailHelp" placeholder="Brand Logo" name="brand_logo">
+                                <input type="file" class="form-control" aria-describedby="emailHelp"
+                                       placeholder="Brand Logo" name="brand_logo">
 
                             </div>
-
 
 
                         </div><!-- modal-body -->

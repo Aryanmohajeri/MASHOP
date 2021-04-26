@@ -12,7 +12,7 @@
             </div><!-- sl-page-title -->
 
             <div class="card pd-20 pd-sm-40">
-                <h6 class="card-body-title">Order List  </h6>
+                <h6 class="card-body-title">Order List </h6>
 
 
                 <div class="table-wrapper">
@@ -68,8 +68,6 @@
                     </table>
                 </div><!-- table-wrapper -->
             </div><!-- card -->
-
-
 
 
         </div><!-- sl-mainpanel -->

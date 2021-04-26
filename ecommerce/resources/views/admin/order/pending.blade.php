@@ -12,7 +12,7 @@
             </div><!-- sl-page-title -->
 
             <div class="card pd-20 pd-sm-40">
-                <h6 class="card-body-title">Order List  </h6>
+                <h6 class="card-body-title">Order List </h6>
 
 
                 <div class="table-wrapper">
@@ -46,11 +46,11 @@
                                     @elseif($row->status == 1)
                                         <span class="badge badge-info">Payment Accepted</span>
                                     @elseif($row->status == 2)
-                                        <span class="badge badge-warning">Progress</span>
+                                        <span class="badge badge-warning">DeliveryProgress</span>
                                     @elseif($row->status == 3)
                                         <span class="badge badge-success">Delivered</span>
                                     @else
-                                        <span class="badge badge-danger">Cancel Order</span>
+                                        <span class="badge badge-danger">Cancelled Order</span>
 
                                     @endif
 
@@ -68,8 +68,6 @@
                     </table>
                 </div><!-- table-wrapper -->
             </div><!-- card -->
-
-
 
 
         </div><!-- sl-mainpanel -->

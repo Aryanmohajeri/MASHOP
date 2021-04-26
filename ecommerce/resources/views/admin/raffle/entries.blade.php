@@ -35,15 +35,16 @@
                                 <td>{{str_limit($row->product_id, $limit = 15, $end = "...") }}</td>
                                 <td> {{$row->name}}</td>
                                 <td>
-                                @if($row->accepted == 0)
-                                    <span class="badge badge-warning">Pending</span>
-                                @elseif($row->accepted == 1)
-                                    <span class="badge badge-info">Raffle Won</span>
-                                @endif
+                                    @if($row->accepted == 0)
+                                        <span class="badge badge-warning">Pending</span>
+                                    @elseif($row->accepted == 1)
+                                        <span class="badge badge-info">Raffle Won</span>
+                                    @endif
                                 </td>
                                 <td>
-                                <a href="{{url('accept/raffle/'.$row->raffle_id)}}" class="btn btn-sm btn-success">Accept</a>
-                                <a href="{{url('reject/raffle/'.$row->raffle_id)}}" class="btn btn-sm btn-danger" id="delete">Reject</a>
+                                    <a href="{{url('accept/raffle/'.$row->raffle_id)}}" class="btn btn-sm btn-success">Accept</a>
+                                    <a href="{{url('reject/raffle/'.$row->raffle_id)}}" class="btn btn-sm btn-danger"
+                                       id="delete">Reject</a>
                                 </td>
                             </tr>
                         @endforeach
@@ -55,10 +56,7 @@
             </div><!-- card -->
 
 
-
-
         </div><!-- sl-mainpanel -->
-
 
 
         <!-- LARGE MODAL -->
@@ -81,22 +79,23 @@
                             </ul>
                         </div>
                     @endif
-                    <form method="post" action="{{ route('store.brand') }}" enctype="multipart/form-data" >
+                    <form method="post" action="{{ route('store.brand') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="modal-body pd-20">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Brand Name</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Brand" name="brand_name">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp" placeholder="Brand" name="brand_name">
 
                             </div>
 
 
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Brand Logo</label>
-                                <input type="file" class="form-control" aria-describedby="emailHelp" placeholder="Brand Logo" name="brand_logo">
+                                <input type="file" class="form-control" aria-describedby="emailHelp"
+                                       placeholder="Brand Logo" name="brand_logo">
 
                             </div>
-
 
 
                         </div><!-- modal-body -->

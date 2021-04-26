@@ -19,7 +19,7 @@
 
         $product = DB::table('products')->get();
         $brand = DB::table('brands')->get();
-        $user = DB::table('users')->get();
+        $user = DB::table('users')->get()
 
     @endphp
 
@@ -40,7 +40,8 @@
                     <div class="card pd-20 bg-primary">
                         <div class="d-flex justify-content-between align-items-center mg-b-10">
                             <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Today's Orders</h6>
-                            <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+                            <a href="" class="tx-white-8 hover-white"><i
+                                    class="icon ion-android-more-horizontal"></i></a>
                         </div><!-- card-header -->
                         <div class="d-flex align-items-center justify-content-between">
                             <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
@@ -54,7 +55,8 @@
                     <div class="card pd-20 bg-info">
                         <div class="d-flex justify-content-between align-items-center mg-b-10">
                             <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">This Month's Sales</h6>
-                            <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+                            <a href="" class="tx-white-8 hover-white"><i
+                                    class="icon ion-android-more-horizontal"></i></a>
                         </div><!-- card-header -->
                         <div class="d-flex align-items-center justify-content-between">
                             <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
@@ -67,7 +69,8 @@
                     <div class="card pd-20 bg-purple">
                         <div class="d-flex justify-content-between align-items-center mg-b-10">
                             <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">This Year's Sales</h6>
-                            <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+                            <a href="" class="tx-white-8 hover-white"><i
+                                    class="icon ion-android-more-horizontal"></i></a>
                         </div><!-- card-header -->
                         <div class="d-flex align-items-center justify-content-between">
                             <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
@@ -80,12 +83,13 @@
                 <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
                     <div class="card pd-20 bg-sl-primary">
                         <div class="d-flex justify-content-between align-items-center mg-b-10">
-                            <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Today Delivered</h6>
-                            <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+                            <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white"> spent on Postage</h6>
+                            <a href="" class="tx-white-8 hover-white"><i
+                                    class="icon ion-android-more-horizontal"></i></a>
                         </div><!-- card-header -->
                         <div class="d-flex align-items-center justify-content-between">
                             <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                            <h3 class="mg-b-0 tx-white tx-lato tx-bold">{{ $deliveries }} </h3>
+                            <h3 class="mg-b-0 tx-white tx-lato tx-bold">£{{ $deliveries }} </h3>
                         </div><!-- card-body -->
 
                     </div><!-- card -->
@@ -95,13 +99,13 @@
             <br><br>
 
 
-
             <div class="row row-sm">
                 <div class="col-sm-6 col-xl-3">
                     <div class="card pd-20 bg-danger">
                         <div class="d-flex justify-content-between align-items-center mg-b-10">
                             <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Total Return</h6>
-                            <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+                            <a href="" class="tx-white-8 hover-white"><i
+                                    class="icon ion-android-more-horizontal"></i></a>
                         </div><!-- card-header -->
                         <div class="d-flex align-items-center justify-content-between">
                             <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
@@ -115,7 +119,8 @@
                     <div class="card pd-20 bg-info">
                         <div class="d-flex justify-content-between align-items-center mg-b-10">
                             <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Total Product</h6>
-                            <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+                            <a href="" class="tx-white-8 hover-white"><i
+                                    class="icon ion-android-more-horizontal"></i></a>
                         </div><!-- card-header -->
                         <div class="d-flex align-items-center justify-content-between">
                             <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
@@ -128,7 +133,8 @@
                     <div class="card pd-20 bg-purple">
                         <div class="d-flex justify-content-between align-items-center mg-b-10">
                             <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Total Brand</h6>
-                            <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+                            <a href="" class="tx-white-8 hover-white"><i
+                                    class="icon ion-android-more-horizontal"></i></a>
                         </div><!-- card-header -->
                         <div class="d-flex align-items-center justify-content-between">
                             <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
@@ -142,7 +148,8 @@
                     <div class="card pd-20 bg-sl-primary">
                         <div class="d-flex justify-content-between align-items-center mg-b-10">
                             <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Total User</h6>
-                            <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+                            <a href="" class="tx-white-8 hover-white"><i
+                                    class="icon ion-android-more-horizontal"></i></a>
                         </div><!-- card-header -->
                         <div class="d-flex align-items-center justify-content-between">
                             <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
@@ -152,9 +159,6 @@
                     </div><!-- card -->
                 </div><!-- col-3 -->
             </div><!-- row -->
-
-
-
 
 
         </div><!-- sl-mainpanel -->

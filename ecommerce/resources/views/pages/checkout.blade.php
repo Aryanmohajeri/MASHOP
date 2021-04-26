@@ -55,14 +55,17 @@
 
                                             <div class="cart_item_quantity cart_info_col">
                                                 <div class="cart_item_title">Quantity</div><br>
-
-                                                <form method="post" action="{{ route('update.cartitem') }}">
-                                                    @csrf
-                                                    <input type="hidden" name="productid" value="{{ $row->rowId }}">
-                                                    <input type="number" name="qty" value="{{ $row->qty }}" style="width: 50px;">
-                                                    <button type="submit" class="btn btn-success btn-sm"><i class="fas fa-check-square"></i> </button>
-
-                                                </form>
+                                                @if($row->options->raffle == 1)
+                                                    <br>
+                                                    <p> Limited To One</p>
+                                                @else
+                                                    <form method="post" action="{{ route('update.cartitem') }}">
+                                                        @csrf
+                                                        <input type="hidden" name="productid" value="{{ $row->rowId }}">
+                                                        <input type="number" name="qty" value="{{ $row->qty }}" style="width: 50px;">
+                                                        <button type="submit" class="btn btn-success btn-sm"><i class="fas fa-check-square"></i> </button>
+                                                    </form>
+                                                @endif
                                             </div>
 
 

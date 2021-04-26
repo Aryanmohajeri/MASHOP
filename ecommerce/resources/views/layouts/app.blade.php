@@ -3,7 +3,6 @@
 <head>
     <title>MASHOP</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="MASHOP Final Year project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{asset('public/frontend/images/logo.png')}}" type="image/icon type">
@@ -104,10 +103,10 @@
                         </div>
                     </div>
 
-   @php
-       $category = DB::table('categories')->get();
-       @endphp
-                    <!-- Search -->
+                @php
+                    $category = DB::table('categories')->get();
+                @endphp
+                <!-- Search -->
                     <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
                         <div class="header_search">
                             <div class="header_search_content">
@@ -119,12 +118,12 @@
                                             <div class="custom_dropdown_list">
                                                 <span class="custom_dropdown_placeholder clc">All Categories</span>
                                                 <i class="fas fa-chevron-down"></i>
-                                                 <ul class="custom_list clc">
-                                                 @foreach($category as $row )
-                                                         <li><a class="clc" href="#">{{$row->category_name}}</a></li>
-                                                         @endforeach
-                                                     </ul>
-                                                 </div>
+                                                <ul class="custom_list clc">
+                                                    @foreach($category as $row )
+                                                        <li><a class="clc" href="#">{{$row->category_name}}</a></li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
                                         </div>
                                         <button type="submit" class="header_search_button trans_300" value="Submit"><img src="{{asset('public/frontend/images/search.png')}}" alt=""></button>
                                     </form>
@@ -137,12 +136,12 @@
                     <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
                         <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
                             <div class="wishlist d-flex flex-row align-items-center justify-content-end">
-                                @guest
+                            @guest
 
-                                @else
-                                    <!-- makes wishlist visible for logged in users only -->
+                            @else
+                                <!-- makes wishlist visible for logged in users only -->
                                     @php
-                                $wishlist = DB::table('wishlists')->where('user_id', Auth::id())->get();
+                                        $wishlist = DB::table('wishlists')->where('user_id', Auth::id())->get();
                                     @endphp
 
                                     <div class="wishlist_icon"><img src="{{asset('public/frontend/images/heart.png')}}" alt=""></div>
@@ -154,12 +153,12 @@
                         @endguest
 
 
-                            <!-- Cart -->
+                        <!-- Cart -->
                             <div class="cart">
                                 <div class="cart_container d-flex flex-row align-items-center justify-content-end">
                                     <div class="cart_icon">
                                         <img src="{{asset('public/frontend/images/cart.png')}}"  alt=""><a href="{{route('show.cart')}}">
-                                        <div class="cart_count"><span>{{Cart::count()}}</span></div>
+                                            <div class="cart_count"><span>{{Cart::count()}}</span></div>
                                     </div>
                                     <div class="cart_content">
                                         <div class="cart_text"><a href="{{route('show.cart')}}">Cart</a></div>
@@ -202,7 +201,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
 
 
 
@@ -225,74 +224,74 @@
 
 
 
-<!--Order Tracking Modal -->
-<div class="modal fade" id="trackOrder" tabindex="-1" role="dialog" aria-labelledby="trackOrderLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Your Order Number</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form method="post" action="{{ route('order.tracking') }}">
-                    @csrf
+        <!--Order Tracking Modal -->
+        <div class="modal fade" id="trackOrder" tabindex="-1" role="dialog" aria-labelledby="trackOrderLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Your Order Number</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                     <div class="modal-body">
-                        <label>Order Number</label>
-                        <input type="text" name="code" required="" class="form-control" placeholder="Your Order Number">
+                        <form method="post" action="{{ route('order.tracking') }}">
+                            @csrf
+                            <div class="modal-body">
+                                <label>Order Number</label>
+                                <input type="text" name="code" required="" class="form-control" placeholder="Your Order Number">
+                            </div>
+
+                            <button class="btn btn-danger" type="submit">Track Now </button>
+
+                        </form>
                     </div>
 
-                    <button class="btn btn-danger" type="submit">Track Now </button>
-
-                </form>
+                </div>
             </div>
-
         </div>
-    </div>
-</div>
 
 
-<script src="{{asset('public/frontend/js/jquery-3.3.1.min.js')}}"></script>
-<script src="{{asset('public/frontend/styles/bootstrap4/popper.js')}}"></script>
-<script src="{{asset('public/frontend/styles/bootstrap4/bootstrap.min.js')}}"></script>
-<script src="{{asset('public/frontend/plugins/greensock/TweenMax.min.js')}}"></script>
-<script src="{{asset('public/frontend/plugins/greensock/TimelineMax.min.js')}}"></script>
-<script src="{{asset('public/frontend/plugins/scrollmagic/ScrollMagic.min.js')}}"></script>
-<script src="{{asset('public/frontend/plugins/greensock/animation.gsap.min.js')}}"></script>
-<script src="{{asset('public/frontend/plugins/greensock/ScrollToPlugin.min.js')}}"></script>
-<script src="{{asset('public/frontend/plugins/OwlCarousel2-2.2.1/owl.carousel.js')}}"></script>
-<script src="{{asset('public/frontend/plugins/slick-1.8.0/slick.js')}}"></script>
-<script src="{{asset('public/frontend/plugins/easing/easing.js')}}"></script>
-<script src="{{asset('public/frontend/js/custom.js')}}"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-<script src="{{asset('public/frontend/js/product_custom.js')}}"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-<script src="{{ asset('https://unpkg.com/sweetalert/dist/sweetalert.min.js')}}"></script>
+        <script src="{{asset('public/frontend/js/jquery-3.3.1.min.js')}}"></script>
+        <script src="{{asset('public/frontend/styles/bootstrap4/popper.js')}}"></script>
+        <script src="{{asset('public/frontend/styles/bootstrap4/bootstrap.min.js')}}"></script>
+        <script src="{{asset('public/frontend/plugins/greensock/TweenMax.min.js')}}"></script>
+        <script src="{{asset('public/frontend/plugins/greensock/TimelineMax.min.js')}}"></script>
+        <script src="{{asset('public/frontend/plugins/scrollmagic/ScrollMagic.min.js')}}"></script>
+        <script src="{{asset('public/frontend/plugins/greensock/animation.gsap.min.js')}}"></script>
+        <script src="{{asset('public/frontend/plugins/greensock/ScrollToPlugin.min.js')}}"></script>
+        <script src="{{asset('public/frontend/plugins/OwlCarousel2-2.2.1/owl.carousel.js')}}"></script>
+        <script src="{{asset('public/frontend/plugins/slick-1.8.0/slick.js')}}"></script>
+        <script src="{{asset('public/frontend/plugins/easing/easing.js')}}"></script>
+        <script src="{{asset('public/frontend/js/custom.js')}}"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+        <script src="{{asset('public/frontend/js/product_custom.js')}}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="{{ asset('https://unpkg.com/sweetalert/dist/sweetalert.min.js')}}"></script>
 
         <script type="text/javascript">
             document.body.appendChild(document.getElementById('trackOrder'));
         </script>
 
-<script>
-    @if(Session::has('messege'))
-    var type="{{Session::get('alert-type','info')}}"
-    switch(type){
-        case 'info':
-            toastr.info("{{ Session::get('messege') }}");
-            break;
-        case 'success':
-            toastr.success("{{ Session::get('messege') }}");
-            break;
-        case 'warning':
-            toastr.warning("{{ Session::get('messege') }}");
-            break;
-        case 'error':
-            toastr.error("{{ Session::get('messege') }}");
-            break;
-    }
-    @endif
-</script>
+        <script>
+            @if(Session::has('messege'))
+            var type="{{Session::get('alert-type','info')}}"
+            switch(type){
+                case 'info':
+                    toastr.info("{{ Session::get('messege') }}");
+                    break;
+                case 'success':
+                    toastr.success("{{ Session::get('messege') }}");
+                    break;
+                case 'warning':
+                    toastr.warning("{{ Session::get('messege') }}");
+                    break;
+                case 'error':
+                    toastr.error("{{ Session::get('messege') }}");
+                    break;
+            }
+            @endif
+        </script>
 </body>
 
 </html>

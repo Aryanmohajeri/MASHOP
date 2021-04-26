@@ -17,7 +17,8 @@
 
             <div class="card pd-20 pd-sm-40">
                 <h6 class="card-body-title">Blog Category List
-                    <a href="#" class="btn btn-sm btn-warning" style="float: right;" data-toggle="modal" data-target="#modaldemo3">Add New Category</a>
+                    <a href="#" class="btn btn-sm btn-warning" style="float: right;" data-toggle="modal"
+                       data-target="#modaldemo3">Add New Category</a>
                 </h6>
 
 
@@ -41,7 +42,8 @@
 
                                 <td>
                                     <a href="{{ URL::to('edit/blogcategory/'.$row->id) }} " class="btn btn-sm btn-info">Edit</a>
-                                    <a href="{{ URL::to('delete/blogcategory/'.$row->id) }}" class="btn btn-sm btn-danger" id="delete">Delete</a>
+                                    <a href="{{ URL::to('delete/blogcategory/'.$row->id) }}"
+                                       class="btn btn-sm btn-danger" id="delete">Delete</a>
                                 </td>
 
                             </tr>
@@ -53,10 +55,7 @@
             </div><!-- card -->
 
 
-
-
         </div><!-- sl-mainpanel -->
-
 
 
         <!-- LARGE MODAL -->
@@ -84,13 +83,17 @@
                         <div class="modal-body pd-20">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Category Name English</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Category name English" name="category_name_en">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp" placeholder="Category name English"
+                                       name="category_name_en">
 
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Category Name Spanish</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Category Name Spanish" name="category_name_es">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp" placeholder="Category Name Spanish"
+                                       name="category_name_es">
 
                             </div>
 
